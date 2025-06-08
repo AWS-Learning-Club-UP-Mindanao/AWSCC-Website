@@ -1,3 +1,3 @@
 # AWSCC Website Revamp
 
-Stay tuned — the clouds are rolling in with something awesome! ☁️🚀
+The cloud’s brewing something fresh — hang tight while we spin it up! ☁️⚙️
