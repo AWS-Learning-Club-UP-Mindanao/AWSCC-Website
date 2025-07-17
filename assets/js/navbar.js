@@ -1,16 +1,21 @@
 export function setupNavbarScrollAnimation(
-  navbarSelector = ".navbar",
   scrollThreshold = 150,
-  activeClass = "navbar-scrolled",
+  navbarSelector = ".navbar",
+  logoSelector = ".navbar-logo",
+  scrolledNav = "navbar-scrolled",
+  scrolledLogo = "navbar-logo-scrolled",
 ) {
   const navbar = document.querySelector(navbarSelector);
-  if (!navbar) return;
+  const logo = document.querySelector(logoSelector);
+  if (!navbar && !logo) return;
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > scrollThreshold) {
-      navbar.classList.add(activeClass);
+      navbar.classList.add(scrolledNav);
+      logo.classList.add(scrolledLogo);
     } else {
-      navbar.classList.remove(activeClass);
+      navbar.classList.remove(scrolledNav);
+      logo.classList.remove(scrolledLogo);
     }
   });
 }

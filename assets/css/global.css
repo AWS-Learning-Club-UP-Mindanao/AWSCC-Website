@@ -20,8 +20,10 @@
 /* Navbar CSS */
 .navbar-container {
 	display: flex;
+	flex-direction: column;
 	position: fixed;
 	justify-content: center;
+	align-items: center;
 	width: 100vw;
 	padding: 30px 0;
 }
@@ -63,6 +65,20 @@
 	background: var(--white);
 	transition: width 0.3s;
 	transition-timing-function: ease;
+}
+
+.navbar-logo {
+	height: 200px;
+	width: 200px;
+	transition: transform 1s;
+	margin-top: 120px; /* If changed, adjust scrolled translateY */
+}
+
+.navbar-logo-scrolled {
+	transform:
+		translate(calc(-1 * 50vw + 3rem), calc(-112px - 120px))
+		scale(0.25);
+	transition: transform 1s;
 }
 
 /* Temporary for Testing Scroll */
