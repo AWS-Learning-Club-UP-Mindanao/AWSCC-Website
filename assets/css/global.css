@@ -12,13 +12,14 @@
 	font-weight: 500;
 }
 
-/* Colors */
+/* Variables */
 :root {
 	--white: #FFFFFF;
 	--logoToNav: -140px;
 	--logoTextToNav: -198px;
 	--leftmost: -50vw;
 	--rightmost: 50vw;
+	background: black;
 }
 
 /* Navbar CSS */
@@ -34,8 +35,16 @@
 
 .navbar-wrapper {
 	width: 100vw;
-	background: rgba(255,255,255,0.1);
 	padding: 30px 0 20px 0;
+	transform: scale(0.9);
+	transition: backdrop-filter 0.5s, background 0.4s, transform 1s;
+}
+
+.navbar-blurred {
+	background: rgba(255,255,255,0.1);
+	backdrop-filter: blur(10px);
+	transform: scale(1);
+	transition: backdrop-filter 0.5s, background 1s, transform 0.4s;
 }
 
 .navbar {
@@ -152,8 +161,8 @@
   transition: none !important;
 }
 
-/* Temporary for Testing Scroll */
+/* Temporary for Testing Scroll Animations */
 body {
-	background: black;
+	background: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1280&q=80") no-repeat center center / cover;
 	height: 200vh;
 }

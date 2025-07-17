@@ -3,9 +3,12 @@ export function setupNavbarScrollAnimation({
   scrollThreshold = 150,
 }) {
   const navbarSelector = ".navbar";
+  const navbarBGSelector = ".navbar-wrapper";
   const logoSelector = ".navbar-logo";
   const text1Selector = ".navbar-logo-text.top";
   const text2Selector = ".navbar-logo-text.bottom";
+
+  const blurredNav = "navbar-blurred";
 
   const scrolledNav = "navbar-scrolled";
   const scrolledLogo = "navbar-logo-scrolled";
@@ -16,6 +19,7 @@ export function setupNavbarScrollAnimation({
   const staticText = "navbar-logo-text-static";
 
   const navbar = document.querySelector(navbarSelector);
+  const navbarBG = document.querySelector(navbarBGSelector);
   const logo = document.querySelector(logoSelector);
   const text1 = document.querySelector(text1Selector);
   const text2 = document.querySelector(text2Selector);
@@ -27,6 +31,7 @@ export function setupNavbarScrollAnimation({
     logo.classList.add(staticLogo);
     text1.classList.add(staticText);
     text2.classList.add(staticText);
+    navbarBG.classList.add(blurredNav);
     return;
   }
 
@@ -36,11 +41,13 @@ export function setupNavbarScrollAnimation({
       logo.classList.add(scrolledLogo);
       text1.classList.add(scrolledText);
       text2.classList.add(scrolledText);
+      navbarBG.classList.add(blurredNav);
     } else {
       navbar.classList.remove(scrolledNav);
       logo.classList.remove(scrolledLogo);
       text1.classList.remove(scrolledText);
       text2.classList.remove(scrolledText);
+      navbarBG.classList.remove(blurredNav);
     }
   });
 }
