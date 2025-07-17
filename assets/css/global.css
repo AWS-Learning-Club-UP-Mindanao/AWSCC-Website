@@ -13,7 +13,7 @@
 /* Navbar CSS */
 .navbar {
   display: flex;
-	gap: 30px;
+	gap: 22px;
   justify-content: center;
   width: 100%;
 	height: 40px;
