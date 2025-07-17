@@ -114,6 +114,33 @@
 	transition: transform 1.2s, font-size 1.2s;
 }
 
+.navbar-static {
+	transform: translateX(calc(50vw - 15rem));
+  transition: none !important;
+}
+
+.navbar-logo-static {
+	height: 50px;
+	width: 50px;
+	transform:
+		translate(calc(-1 * 50vw + 3rem), calc(-60px - 120px + 60px));
+  transition: none !important;
+}
+
+.navbar-logo-text-static.top {
+	transform:
+		translate(calc(-1 * 50vw + 8rem), calc(-118px - 120px + 60px));
+	font-size: 12px;
+  transition: none !important;
+}
+
+.navbar-logo-text-static.bottom {
+	transform:
+		translate(calc(-1 * 50vw + 8rem - 0.58rem), calc(-118px - 120px + 60px));
+	font-size: 12px;
+  transition: none !important;
+}
+
 /* Temporary for Testing Scroll */
 body {
 	background: black;

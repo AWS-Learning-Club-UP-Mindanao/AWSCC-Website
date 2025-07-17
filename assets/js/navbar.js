@@ -1,17 +1,33 @@
-export function setupNavbarScrollAnimation(
+export function setupNavbarScrollAnimation({
+  isLanding = false,
   scrollThreshold = 150,
-  navbarSelector = ".navbar",
-  logoSelector = ".navbar-logo",
-  textSelector = ".navbar-logo-text-container",
-  scrolledNav = "navbar-scrolled",
-  scrolledLogo = "navbar-logo-scrolled",
-  scrolledText = "navbar-logo-text-scrolled",
-) {
+}) {
+  const navbarSelector = ".navbar";
+  const logoSelector = ".navbar-logo";
+  const textSelector = ".navbar-logo-text-container";
+
+  const scrolledNav = "navbar-scrolled";
+  const scrolledLogo = "navbar-logo-scrolled";
+  const scrolledText = "navbar-logo-text-scrolled";
+
+  const staticNav = "navbar-static";
+  const staticLogo = "navbar-logo-static";
+  const staticText = "navbar-logo-text-static";
+
   const navbar = document.querySelector(navbarSelector);
   const logo = document.querySelector(logoSelector);
   const text1 = document.querySelector(textSelector).children[0];
   const text2 = document.querySelector(textSelector).children[1];
+
   if (!navbar || !logo || !text1 || !text2) return;
+
+  if (!isLanding) {
+    navbar.classList.add(staticNav);
+    logo.classList.add(staticLogo);
+    text1.classList.add(staticText);
+    text2.classList.add(staticText);
+    return;
+  }
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > scrollThreshold) {
@@ -28,4 +44,4 @@ export function setupNavbarScrollAnimation(
   });
 }
 
-setupNavbarScrollAnimation();
+setupNavbarScrollAnimation({ isLanding: true });
