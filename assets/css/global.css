@@ -16,6 +16,27 @@
 }
 
 .navbar > a {
+	display: flex;
+	flex-direction: column;
 	text-decoration: none;
 	color: black;
+}
+
+.navbar > a::after {
+	content: "";
+	width: 0%;
+	height: 3px;
+	background: black;
+	align-self: center;
+	transition: width 0.3s;
+	transition-timing-function: ease;
+}
+
+.navbar > a:hover::after {
+	content: "";
+	width: 100%;
+	height: 3px;
+	background: black;
+	transition: width 0.3s;
+	transition-timing-function: ease;
 }
