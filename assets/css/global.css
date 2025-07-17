@@ -1,0 +1,18 @@
+* {
+	font-family: 
+}
+
+/* Navbar CSS */
+.navbar {
+  display: flex;
+	gap: 30px;
+  justify-content: center;
+  width: 100%;
+	height: 40px;
+	margin-top: 40px;
+}
+
+.navbar > a {
+	text-decoration: none;
+	color: white;
+}
