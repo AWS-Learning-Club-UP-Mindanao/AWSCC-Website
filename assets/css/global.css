@@ -18,15 +18,25 @@
 }
 
 /* Navbar CSS */
-.navbar {
+.navbar-container {
 	display: flex;
 	position: fixed;
-	gap: 22px;
 	justify-content: center;
-	width: 100%;
-	height: auto;
+	width: 100vw;
 	padding: 30px 0;
+}
+
+.navbar {
+	display: flex;
+	gap: 22px;
+	height: auto;
 	font-family: "Amazon Ember Display", sans-serif;
+	transition: transform 1s;
+}
+
+.navbar-scrolled {
+	transform: translateX(calc(50vw - 15rem));
+	transition: transform 1s;
 }
 
 .navbar > a {
@@ -53,4 +63,10 @@
 	background: var(--white);
 	transition: width 0.3s;
 	transition-timing-function: ease;
+}
+
+/* Temporary for Testing Scroll */
+body {
+	background: black;
+	height: 200vh;
 }
