@@ -4,7 +4,8 @@ export function setupNavbarScrollAnimation({
 }) {
   const navbarSelector = ".navbar";
   const logoSelector = ".navbar-logo";
-  const textSelector = ".navbar-logo-text-container";
+  const text1Selector = ".navbar-logo-text.top";
+  const text2Selector = ".navbar-logo-text.bottom";
 
   const scrolledNav = "navbar-scrolled";
   const scrolledLogo = "navbar-logo-scrolled";
@@ -16,8 +17,8 @@ export function setupNavbarScrollAnimation({
 
   const navbar = document.querySelector(navbarSelector);
   const logo = document.querySelector(logoSelector);
-  const text1 = document.querySelector(textSelector).children[0];
-  const text2 = document.querySelector(textSelector).children[1];
+  const text1 = document.querySelector(text1Selector);
+  const text2 = document.querySelector(text2Selector);
 
   if (!navbar || !logo || !text1 || !text2) return;
 
