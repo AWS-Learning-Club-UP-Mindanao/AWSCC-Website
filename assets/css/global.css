@@ -22,6 +22,13 @@
 	background: black;
 }
 
+/* Global/Reusable CSS */
+.gradient-text {
+	background: linear-gradient(135.066deg, #FFFFFF 18%, #BBAFFD 47%, #EFDCF1 110%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+}
+
 /* Navbar CSS */
 .navbar-container {
 	display: flex;
@@ -104,15 +111,15 @@
 }
 
 .navbar-logo-text {
-	color: var(--white);
 	font-family: "Amazon Ember Display", sans-serif;
 	font-weight: bold;
 	text-align: center;
+	-webkit-text-fill-color: var(--white);
 }
 
 .navbar-logo-text.top {
 	font-size: 46px;
-	transition: transform 0.8s, font-size 0.8s;
+	transition: transform 0.8s, font-size 0.8s, -webkit-text-fill-color 2.8s;
 }
 
 .navbar-logo-text.bottom {
@@ -163,6 +170,6 @@
 
 /* Temporary for Testing Scroll Animations */
 body {
-	background: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1280&q=80") no-repeat center center / cover;
+	background: black;
 	height: 200vh;
 }

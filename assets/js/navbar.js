@@ -9,6 +9,7 @@ export function setupNavbarScrollAnimation({
   const text2Selector = ".navbar-logo-text.bottom";
 
   const blurredNav = "navbar-blurred";
+  const gradientText = "gradient-text";
 
   const scrolledNav = "navbar-scrolled";
   const scrolledLogo = "navbar-logo-scrolled";
@@ -42,12 +43,14 @@ export function setupNavbarScrollAnimation({
       text1.classList.add(scrolledText);
       text2.classList.add(scrolledText);
       navbarBG.classList.add(blurredNav);
+      text1.classList.remove(gradientText);
     } else {
       navbar.classList.remove(scrolledNav);
       logo.classList.remove(scrolledLogo);
       text1.classList.remove(scrolledText);
       text2.classList.remove(scrolledText);
       navbarBG.classList.remove(blurredNav);
+      text1.classList.add(gradientText);
     }
   });
 }
