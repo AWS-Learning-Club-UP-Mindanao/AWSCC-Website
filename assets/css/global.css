@@ -87,7 +87,9 @@ html {
 	content: "";
 	width: 0%;
 	height: 3px;
+	margin-top: 3px;
 	background: var(--white);
+	border-radius: 50px;
 	align-self: center;
 	transition: width 0.3s;
 	transition-timing-function: ease;
