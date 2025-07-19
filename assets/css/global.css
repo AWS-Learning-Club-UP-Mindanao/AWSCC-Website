@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+	background: black; /* For Scroll Overlap from Smooth Scrolling */
+}
+
 /* Fonts */
 @font-face {
 	font-family: "Amazon Ember Display";
@@ -22,8 +26,6 @@
 	--logoTextToNav: -188px;
 	--leftmost: -50vw;
 	--rightmost: 50vw;
-
-	background: black;
 }
 
 /* Global/Reusable CSS */
