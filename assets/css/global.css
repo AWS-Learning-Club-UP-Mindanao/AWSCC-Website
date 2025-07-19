@@ -116,6 +116,7 @@
 }
 
 .navbar-logo-text {
+	justify-self: center;
 	font-family: "Amazon Ember Display", sans-serif;
 	font-weight: bold;
 	text-align: center;
@@ -128,8 +129,29 @@
 }
 
 .navbar-logo-text.bottom {
+	white-space: nowrap;
 	font-size: 26px;
 	transition: transform 0.8s, font-size 0.8s;
+}
+
+.navbar-logo-text.bottom::before,
+.navbar-logo-text.bottom::after {
+	display: inline-block;
+	content: "";
+	height: 1px;
+	width: 30px;
+	margin: 0 10px 10px 10px;
+	background: transparent;
+	transform: scale(0.1);
+	transition: background 0.3s, transform 0.5s;
+}
+
+.navbar-logo-text.bottom:not(.navbar-logo-text-scrolled)::before,
+.navbar-logo-text.bottom:not(.navbar-logo-text-scrolled)::after {
+	background: var(--white);
+	opacity: 0.5;
+	transform: scale(1);
+	transition: background 0.3s, transform 0.5s;
 }
 
 .navbar-logo-text-scrolled.top {
