@@ -1,25 +1,32 @@
-export function setupNavbarScrollAnimation({
+const container = document.getElementById("navbar-component");
+
+// Fetch and insert navbar
+fetch("/assets/components/navbar.html")
+  .then((res) => res.text())
+  .then((html) => {
+    container.innerHTML = html;
+
+    setupNavbarScrollAnimation({ isLanding: true });
+  })
+  .catch((err) => console.error("Failed to load navbar:", err));
+
+// Scroll animation
+function setupNavbarScrollAnimation({
   isLanding = false,
   scrollThreshold = 150,
 }) {
-  const navbarSelector = ".navbar";
-  const navbarBGSelector = ".navbar-wrapper";
-  const logoSelector = ".navbar-logo";
-  const text1Selector = ".navbar-logo-text.top";
-  const text2Selector = ".navbar-logo-text.bottom";
+  const navbar = document.querySelector(".navbar");
+  const navbarBG = document.querySelector(".navbar-wrapper");
+  const logo = document.querySelector(".navbar-logo");
+  const text1 = document.querySelector(".navbar-logo-text.top");
+  const text2 = document.querySelector(".navbar-logo-text.bottom");
 
   const blurredNav = "navbar-blurred";
   const gradientText = "gradient-text";
   const scrolled = "scrolled";
   const isStatic = "static";
 
-  const navbar = document.querySelector(navbarSelector);
-  const navbarBG = document.querySelector(navbarBGSelector);
-  const logo = document.querySelector(logoSelector);
-  const text1 = document.querySelector(text1Selector);
-  const text2 = document.querySelector(text2Selector);
-
-  if (!navbar || !logo || !text1 || !text2) return;
+  if (!navbar || !logo || !text1 || !text2 || !navbarBG) return;
 
   if (!isLanding) {
     navbar.classList.add(isStatic);
@@ -48,5 +55,3 @@ export function setupNavbarScrollAnimation({
     }
   });
 }
-
-setupNavbarScrollAnimation({ isLanding: true });
