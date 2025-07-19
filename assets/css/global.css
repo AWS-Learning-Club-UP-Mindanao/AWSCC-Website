@@ -67,7 +67,7 @@
 	justify-content: center;
 }
 
-.navbar-scrolled {
+.navbar.scrolled {
 	transform: translateX(calc(var(--rightmost) - 15rem));
 	transition: transform 1s;
 }
@@ -107,7 +107,7 @@
 }
 
 /* If changed, adjust scrolled translateY */
-.navbar-logo-scrolled {
+.navbar-logo.scrolled {
 	height: 40px;
 	width: 40px;
 	transform:
@@ -146,34 +146,34 @@
 	transition: background 0.3s, transform 0.5s;
 }
 
-.navbar-logo-text.bottom:not(.navbar-logo-text-scrolled)::before,
-.navbar-logo-text.bottom:not(.navbar-logo-text-scrolled)::after {
+.navbar-logo-text.bottom:not(.scrolled)::before,
+.navbar-logo-text.bottom:not(.scrolled)::after {
 	background: var(--white);
 	opacity: 0.5;
 	transform: scale(1);
 	transition: background 0.3s, transform 0.5s;
 }
 
-.navbar-logo-text-scrolled.top {
+.navbar-logo-text.scrolled.top {
 	transform:
 		translate(calc(var(--leftmost) + 8rem), var(--logoTextToNav));
 	font-size: 12px;
 	transition: transform 1.1s, font-size 1.1s;
 }
 
-.navbar-logo-text-scrolled.bottom {
+.navbar-logo-text.scrolled.bottom {
 	transform:
 		translate(calc(var(--leftmost) + 8rem - 0.58rem), var(--logoTextToNav));
 	font-size: 12px;
 	transition: transform 1.2s, font-size 1.2s;
 }
 
-.navbar-static {
+.navbar.static {
 	transform: translateX(calc(var(--rightmost) - 15rem));
   transition: none !important;
 }
 
-.navbar-logo-static {
+.navbar-logo.static {
 	height: 50px;
 	width: 50px;
 	transform:
@@ -181,14 +181,14 @@
   transition: none !important;
 }
 
-.navbar-logo-text-static.top {
+.navbar-logo-text.static.top {
 	transform:
 		translate(calc(var(--leftmost) + 8rem), var(--logoTextToNav));
 	font-size: 12px;
   transition: none !important;
 }
 
-.navbar-logo-text-static.bottom {
+.navbar-logo-text.static.bottom {
 	transform:
 		translate(calc(--var(leftmost) + 8rem - 0.58rem), var(--logoTextToNav));
 	font-size: 12px;

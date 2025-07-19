@@ -10,14 +10,8 @@ export function setupNavbarScrollAnimation({
 
   const blurredNav = "navbar-blurred";
   const gradientText = "gradient-text";
-
-  const scrolledNav = "navbar-scrolled";
-  const scrolledLogo = "navbar-logo-scrolled";
-  const scrolledText = "navbar-logo-text-scrolled";
-
-  const staticNav = "navbar-static";
-  const staticLogo = "navbar-logo-static";
-  const staticText = "navbar-logo-text-static";
+  const scrolled = "scrolled";
+  const isStatic = "static";
 
   const navbar = document.querySelector(navbarSelector);
   const navbarBG = document.querySelector(navbarBGSelector);
@@ -28,27 +22,27 @@ export function setupNavbarScrollAnimation({
   if (!navbar || !logo || !text1 || !text2) return;
 
   if (!isLanding) {
-    navbar.classList.add(staticNav);
-    logo.classList.add(staticLogo);
-    text1.classList.add(staticText);
-    text2.classList.add(staticText);
+    navbar.classList.add(isStatic);
+    logo.classList.add(isStatic);
+    text1.classList.add(isStatic);
+    text2.classList.add(isStatic);
     navbarBG.classList.add(blurredNav);
     return;
   }
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > scrollThreshold) {
-      navbar.classList.add(scrolledNav);
-      logo.classList.add(scrolledLogo);
-      text1.classList.add(scrolledText);
-      text2.classList.add(scrolledText);
+      navbar.classList.add(scrolled);
+      logo.classList.add(scrolled);
+      text1.classList.add(scrolled);
+      text2.classList.add(scrolled);
       navbarBG.classList.add(blurredNav);
       text1.classList.remove(gradientText);
     } else {
-      navbar.classList.remove(scrolledNav);
-      logo.classList.remove(scrolledLogo);
-      text1.classList.remove(scrolledText);
-      text2.classList.remove(scrolledText);
+      navbar.classList.remove(scrolled);
+      logo.classList.remove(scrolled);
+      text1.classList.remove(scrolled);
+      text2.classList.remove(scrolled);
       navbarBG.classList.remove(blurredNav);
       text1.classList.add(gradientText);
     }
