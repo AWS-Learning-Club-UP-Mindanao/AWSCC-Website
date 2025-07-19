@@ -49,15 +49,17 @@ html {
 .navbar-wrapper {
 	width: 100vw;
 	padding: 30px 0 20px 0;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0);
 	transform: scale(1, 0.9);
-	transition: backdrop-filter 0.5s, background 0.4s, transform 1s;
+	transition: backdrop-filter 0.5s, background 1.4s, transform 1s, box-shadow 0.5s;
 }
 
 .navbar-blurred {
-	background: rgba(255,255,255,0.1);
-	backdrop-filter: blur(10px);
+	background: rgba(0,0,0,0.2);
+	backdrop-filter: blur(40px);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 	transform: scale(1);
-	transition: backdrop-filter 0.5s, background 1s, transform 0.4s;
+	transition: backdrop-filter 0.5s, background 1s, transform 0.4s, box-shadow 0.5s;
 	transition-delay: 0.6s;
 }
 
@@ -202,6 +204,6 @@ html {
 
 /* Temporary for Testing Scroll Animations */
 body {
-	background: black;
+	background: linear-gradient(120deg, #5F08A6 0%, #5E006D 40%);
 	height: 200vh;
 }
