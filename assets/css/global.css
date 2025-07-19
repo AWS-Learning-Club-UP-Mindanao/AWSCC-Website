@@ -14,11 +14,15 @@
 
 /* Variables */
 :root {
+	/* Colors */
 	--white: #FFFFFF;
-	--logoToNav: -140px;
-	--logoTextToNav: -198px;
+
+	/* For Nav Animation */
+	--logoToNav: -132px;
+	--logoTextToNav: -188px;
 	--leftmost: -50vw;
 	--rightmost: 50vw;
+
 	background: black;
 }
 
@@ -43,7 +47,7 @@
 .navbar-wrapper {
 	width: 100vw;
 	padding: 30px 0 20px 0;
-	transform: scale(0.9);
+	transform: scale(1, 0.9);
 	transition: backdrop-filter 0.5s, background 0.4s, transform 1s;
 }
 
@@ -102,9 +106,10 @@
 	margin: 80px 0 20px 0; /* If changed, adjust scrolled translateY */
 }
 
+/* If changed, adjust scrolled translateY */
 .navbar-logo-scrolled {
-	height: 50px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
 	transform:
 		translate(calc(var(--leftmost) + 3rem), var(--logoToNav));
 	transition: transform 1s, height 1s, width 1s;
