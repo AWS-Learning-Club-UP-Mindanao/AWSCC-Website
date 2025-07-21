@@ -62,6 +62,7 @@ html {
 	flex-direction: row;
 	justify-content: center;
 	width: 100vw;
+	height: 70px;
 	padding: 30px 0 20px 0;
 	box-shadow: 0 5px 30px rgba(0, 0, 0, 0);
 	transform: scale(1, 0.9);
@@ -81,16 +82,23 @@ html {
 
 .navbar {
 	display: flex;
+	position: fixed;
+	padding: 30px 0 20px 0;
+	top: 0;
+	height: 100px;
 	gap: 22px;
-	height: auto;
 	font-family: "Amazon Ember Display", sans-serif;
 	transition: transform 1s;
 	justify-content: center;
+	opacity: 1;
+	z-index: 2;
 }
 
-.navbar.scrolled:not(.dropdown) {
-	transform: translateX(calc(var(--rightmost) - 15rem));
-	transition: transform 1s;
+@media (min-width: 768px) {
+	.navbar.scrolled:not(.dropdown) {
+		transform: translateX(calc(var(--rightmost) - 15rem));
+		transition: transform 1s;
+	}
 }
 
 .navbar > a {
@@ -110,8 +118,8 @@ html {
 	background: var(--white);
 	border-radius: 50px;
 	align-self: center;
-	transition: width 0.3s;
-	transition-timing-function: ease;
+	transition: width 0.5s;
+	transition-timing-function: ease-in;
 }
 
 .navbar > a:hover::after {
@@ -285,12 +293,7 @@ html {
 		z-index: 1;
 	}
 
-	.navbar-wrapper.dropdown {
-		z-index: 3;
-	}
-
 	.navbar {
-		display: none;
 		position: fixed;
 		background: linear-gradient(180deg, #0f0b26 0%, #1e003d 70%);
 		flex-direction: column;
@@ -298,14 +301,17 @@ html {
 		justify-content: flex-start;
 		align-items: center;
 		text-align: center;
-		top: 0;
-		left: 0;
+		left: 100vw;
 		width: 100vw;
 		height: 100vh;
+		padding: 0;
+		z-index: 100;
+		transition: left 1s;
 	}
 
 	.navbar.dropdown {
-		display: flex;
+		left: 0px;
+		transition: left 1s;
 	}
 
 	.navbar-dropdown-header {
