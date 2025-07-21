@@ -1,36 +1,51 @@
 <div class="navbar-container">
 
   <!-- Main Navigation Bar -->
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
     <div class="navbar-dropdown-header">
       <div class="navbar-dropdown-logo">
-        <img src="/assets/img/AWS CLOUD CLUB.png" />
+        <img src="/assets/img/AWS CLOUD CLUB.png" alt="AWS Cloud Club Logo" />
         <div class="navbar-dropdown-logo-text">
-          <p>AWS Cloud Club - UP Mindanao</p>
-          <p>It's Always Day One!</p>
+          <p tabindex="0">AWS Cloud Club - UP Mindanao</p>
+          <p tabindex="0">It's Always Day One!</p>
         </div>
-      </div>
-      <button class="navbar-dropdown-button close" aria-label="Toggle Menu">
-        <img src="/assets/icons/undo-2.png" />
+</div>
+      <button
+        class="navbar-dropdown-button close"
+        aria-label="Close Menu"
+        aria-expanded="true"
+        tabindex="0"
+      >
+        <img src="/assets/icons/undo-2.png" alt="Close icon" />
       </button>
     </div>
-    <a href="/pages/officers.html">Officers</a>
-    <a href="/pages/events.html">Events</a>
-    <a href="">Workshops</a>
-    <a href="/pages/blogs.html">Blogs</a>
-    <a href="/pages/about.html">About</a>
-    <a href="">Join Us</a>
+    <a href="/pages/officers.html" tabindex="0">Officers</a>
+    <a href="/pages/events.html" tabindex="0">Events</a>
+    <a href="#" tabindex="0">Workshops</a>
+    <a href="/pages/blogs.html" tabindex="0">Blogs</a>
+    <a href="/pages/about.html" tabindex="0">About</a>
+    <a href="#" tabindex="0">Join Us</a>
   </nav>
   
   <!-- Navigation Bar Background (Blur) -->
   <div class="navbar-wrapper">
-    <button class="navbar-dropdown-button open" aria-label="Toggle Menu">
-      <img src="/assets/icons/menu.png" />
+    <button
+      class="navbar-dropdown-button open"
+      aria-label="Open Menu"
+      aria-expanded="false"
+      tabindex="0"
+    >
+      <img src="/assets/icons/menu.png" alt="Menu icon" />
     </button>
   </div>
 
   <!-- Animated Logo -->
-  <img class="navbar-logo" src="/assets/img/AWS CLOUD CLUB.png" />
-  <p class="navbar-logo-text top gradient-text">AWS Cloud Club</p>
-  <p class="navbar-logo-text bottom">UP Mindanao</p>
+  <img
+    class="navbar-logo"
+    src="/assets/img/AWS CLOUD CLUB.png"
+    alt="AWS Cloud Club Logo"
+  />
+  <p class="navbar-logo-text top gradient-text" tabindex="0">AWS Cloud Club</p>
+  <p class="navbar-logo-text bottom" tabindex="0">UP Mindanao</p>
 </div>
+
