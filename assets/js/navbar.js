@@ -6,6 +6,20 @@ fetch("/assets/components/navbar.html")
   .then((html) => {
     container.innerHTML = html;
 
+    // Dropdown toggle logic
+    const dropdown = document.querySelectorAll(".navbar-dropdown-button");
+    const navbar = document.querySelector(".navbar");
+
+    if (dropdown && navbar) {
+      dropdown.forEach((button) => {
+        button.addEventListener("click", () => {
+          navbar.classList.toggle("dropdown");
+          navbar.parentElement.classList.toggle("dropdown");
+          document.body.classList.toggle("dropdown");
+        });
+      });
+    }
+
     setupNavbarScrollAnimation({ isLanding: true });
   })
   .catch((err) => console.error("Failed to load navbar:", err));

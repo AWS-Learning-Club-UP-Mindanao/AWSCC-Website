@@ -12,8 +12,14 @@ html {
 /* Fonts */
 @font-face {
 	font-family: "Amazon Ember Display";
-	src: url("../fonts/AmazonEmberDisplay_Rg.ttf") format("ttf");
+	src: url("../fonts/AmazonEmberDisplay_Rg.ttf") format("truetype");
 	font-weight: 500;
+}
+
+/* Fonts */
+@font-face {
+	font-family: "Amazon Ember";
+	src: url("../fonts/AmazonEmber_Bd.ttf") format("truetype");
 }
 
 /* Variables */
@@ -47,6 +53,9 @@ html {
 }
 
 .navbar-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	width: 100vw;
 	padding: 30px 0 20px 0;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0);
@@ -72,13 +81,14 @@ html {
 	justify-content: center;
 }
 
-.navbar.scrolled {
+.navbar.scrolled:not(.dropdown) {
 	transform: translateX(calc(var(--rightmost) - 15rem));
 	transition: transform 1s;
 }
 
 .navbar > a {
 	display: flex;
+	width: fit-content;
 	font-size: 14px;
 	flex-direction: column;
 	text-decoration: none;
@@ -107,10 +117,12 @@ html {
 }
 
 .navbar-logo {
+	position: relative;
 	height: 100px;
 	width: 100px;
 	transition: transform 1s, height 1s, width 1s;
 	margin: 80px 0 20px 0; /* If changed, adjust scrolled translateY */
+	z-index: 2;
 }
 
 /* If changed, adjust scrolled translateY */
@@ -123,11 +135,13 @@ html {
 }
 
 .navbar-logo-text {
+	position: relative;
 	justify-self: center;
-	font-family: "Amazon Ember Display", sans-serif;
+	font-family: "Amazon Ember", sans-serif;
 	font-weight: bold;
 	text-align: center;
 	-webkit-text-fill-color: var(--white);
+	z-index: 2;
 }
 
 .navbar-logo-text.top {
@@ -200,6 +214,103 @@ html {
 		translate(calc(--var(leftmost) + 8rem - 0.58rem), var(--logoTextToNav));
 	font-size: 12px;
   transition: none !important;
+}
+
+/* Navbar Dropdown */
+.navbar-dropdown-button {
+  display: none;
+  font-size: 12px;
+	height: 25px;
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.navbar-dropdown-header {
+	display: none;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 30px 0 20px 0;
+	width: 100vw;
+}
+
+.navbar-dropdown-logo {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.navbar-dropdown-logo > img {
+	height: 25px;
+	width: 25px;
+}
+
+.navbar-dropdown-logo-text {
+	display: flex;
+	flex-direction: column;
+	color: var(--white);
+	text-align: left;
+}
+
+.navbar-dropdown-logo-text > p:first-of-type {
+	font-family: "Amazon Ember", sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.navbar-dropdown-logo-text> p:last-of-type {
+	font-family: "Amazon Ember Display", sans-serif;
+	font-size: 8px;
+}
+
+/* Responsive Behavior */
+@media screen and (max-width: 768px) {
+  .navbar-dropdown-button {
+    display: block;
+		content: "X";
+		padding: 0 1rem;
+  }
+
+	.navbar-wrapper {
+		position: relative;
+		justify-content: flex-end;
+		transform: scale(1, 1);
+		z-index: 1;
+	}
+
+	.navbar-wrapper.dropdown {
+		z-index: 3;
+	}
+
+  .navbar {
+    display: none;
+		position: fixed;
+		background: linear-gradient(180deg, #0F0B26 0%, #1E003D 70%);
+    flex-direction: column;
+    gap: 40px;
+		justify-content: flex-start;
+		align-items: center;
+    text-align: center;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+  }
+
+  .navbar.dropdown {
+    display: flex;
+  }
+
+	.navbar-dropdown-header {
+		display: flex;
+		padding-left: 1rem;
+	}
+
+	/* Disable Scroll when Dropdown Nav is active*/
+	body.dropdown {
+		overflow: hidden;
+	}
 }
 
 /* Temporary for Testing Scroll Animations */
