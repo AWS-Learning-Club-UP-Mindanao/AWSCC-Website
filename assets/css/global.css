@@ -344,23 +344,6 @@ body {
 }
 
 /* Leads Section */
-#deptHeads-component{
-  margin-top:70px;
-}
-
-.deptHeads-heading{
-  font-size: 40px;
-  font-family: "Amazon Ember", sans-serif;
-}
-
-#deptHeads-cards{
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 50px;
-}
-
-/* Department Heads Section */
 #leads-component{
   margin-top:70px;
 }
@@ -374,6 +357,23 @@ body {
   margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+/* Department Heads Section */
+#deptHeads-component{
+  margin-top:70px;
+}
+
+.deptHeads-heading{
+  font-size: 40px;
+  font-family: "Amazon Ember", sans-serif;
+}
+
+#deptHeads-cards{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
 }
 
@@ -396,7 +396,7 @@ body {
 #committeeHeads-cards{
   margin-top: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
 }
 
