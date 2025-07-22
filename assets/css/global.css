@@ -45,10 +45,12 @@ html {
 /* Reusable for Navbar Div */
 #navbar-component-static{
   min-height: 100px;
+  z-index: 1000;
 }
 
 /* Navbar Container */
 .navbar-container {
+  z-index: 1000;
 	display: flex;
 	flex-direction: column;
 	position: fixed;
@@ -321,10 +323,9 @@ html {
 /* Page Background for Testing */
 body {
 	background: linear-gradient(120deg, #3f0846 20%, #0e002d 80%);
-	height: 200vh;
+	height: 300vh;
 }
 
-/* Officer Heading and Subheading */
 .centerDiv{
   display: flex;
   flex-direction: column;
@@ -333,6 +334,32 @@ body {
 }
 
 
+/* Leads Section */
+#leads-cards{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+/* Department Heads Section */
+#leads-component, #deptHeads-component, #committeeHeads-component{
+  margin-top:70px;
+}
+
+.leads-heading, .deptHeads-heading, .committeeHeads-heading{
+  font-size: 50px;
+  font-family: "Amazon Ember", sans-serif;
+}
+
+#deptHeads-cards, #committeeHeads-cards{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+/* Officer Heading and Subheading */
 #officers-text{
   text-align: center;
   width: 700px;
@@ -341,63 +368,6 @@ body {
 .officers-heading{
   font-size: 40px;
   font-family: "Amazon Ember", sans-serif;
-}
-
-/* Leads Section */
-#leads-component{
-  margin-top:70px;
-}
-
-.leads-heading{
-  font-size: 40px;
-  font-family: "Amazon Ember", sans-serif;
-}
-
-#leads-cards{
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-}
-
-/* Department Heads Section */
-#deptHeads-component{
-  margin-top:70px;
-}
-
-.deptHeads-heading{
-  font-size: 40px;
-  font-family: "Amazon Ember", sans-serif;
-}
-
-#deptHeads-cards{
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 50px;
-}
-
-.officers-description{
-  color: white;
-  font-family: "Amazon Ember Display", sans-serif;
-  font-size: 20px;
-}
-
-/* Committee  Heads Section */
-#committeeHeads-component{
-  margin-top:70px;
-}
-
-.committeeHeads-heading{
-  font-size: 40px;
-  font-family: "Amazon Ember", sans-serif;
-}
-
-#committeeHeads-cards{
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 50px;
 }
 
 .officers-description{
@@ -409,7 +379,8 @@ body {
 /* Officer Card */
 .officer-card{
   position: relative;
-  width: 200px;
+  z-index: 1;
+  width: 250px;
   border: 1px var(--officerBorderColor) solid;
   border-radius: 10px;
   background-color: var(--officerBgColor);
@@ -428,19 +399,21 @@ body {
 .officer-name{
   color: #E5E5E5;
   font-family: "Amazon Ember", sans-serif;
+  font-size: 16px;
 }
 
 .officer-position{
   color: #E5E5E5;
   font-weight: 10;
   font-family: "Amazon Ember Display", sans-serif;
+  font-size: 14px;
 }
 
 .officer-desc{
   color: #E5E5E5;
   padding-top: 6px;
   font-family: "Amazon Ember Display", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .headShot{
