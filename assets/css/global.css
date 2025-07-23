@@ -25,6 +25,8 @@ html {
 :root {
 	/* Colors */
 	--white: #ffffff;
+  --officerBorderColor: #858190;
+  --officerBgColor: rgba(38, 28, 59, 0.5);
 
 	/* For Nav Animation */
 	--logoToNav: -132px;
@@ -40,8 +42,15 @@ html {
 	-webkit-text-fill-color: transparent !important;
 }
 
+/* Reusable for Navbar Div */
+#navbar-component-static{
+  min-height: 100px;
+  z-index: 1000;
+}
+
 /* Navbar Container */
 .navbar-container {
+  z-index: 1000;
 	display: flex;
 	flex-direction: column;
 	position: fixed;
@@ -314,6 +323,112 @@ html {
 /* Page Background for Testing */
 body {
 	background: linear-gradient(120deg, #3f0846 20%, #0e002d 80%);
-	height: 200vh;
+	height: 300vh;
 }
 
+.centerDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Leads Section */
+#leads-cards{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+/* Department Heads Section */
+#leads-component, #deptHeads-component, #committeeHeads-component{
+  margin-top:70px;
+}
+
+.leads-heading, .deptHeads-heading, .committeeHeads-heading{
+  font-size: 50px;
+  font-family: "Amazon Ember", sans-serif;
+}
+
+#deptHeads-cards, #committeeHeads-cards{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+/* Officer Heading and Subheading */
+#officers-text{
+  text-align: center;
+  width: 700px;
+}
+
+.officers-heading{
+  font-size: 40px;
+  font-family: "Amazon Ember", sans-serif;
+}
+
+.officers-description{
+  color: white;
+  font-family: "Amazon Ember Display", sans-serif;
+  font-size: 20px;
+}
+
+/* Officer Card */
+.officer-card{
+  position: relative;
+  z-index: 1;
+  width: 250px;
+  border: 1px var(--officerBorderColor) solid;
+  border-radius: 10px;
+  background-color: var(--officerBgColor);
+  overflow: hidden;
+}
+
+.officer-info{
+  position:absolute;
+  bottom: 0;
+  padding-left:10px;
+  padding-bottom:10px;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.officer-name{
+  color: #E5E5E5;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 16px;
+}
+
+.officer-position{
+  color: #E5E5E5;
+  font-weight: 10;
+  font-family: "Amazon Ember Display", sans-serif;
+  font-size: 14px;
+}
+
+.officer-desc{
+  color: #E5E5E5;
+  padding-top: 6px;
+  font-family: "Amazon Ember Display", sans-serif;
+  font-size: 12px;
+}
+
+.headShot{
+  width: 100%;
+  display: block;
+}
+
+.headShot::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* adjust height of overlay */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+}

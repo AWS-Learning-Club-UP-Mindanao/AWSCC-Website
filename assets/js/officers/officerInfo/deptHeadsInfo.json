@@ -1,0 +1,34 @@
+{
+  "departmentHeads":[
+    {
+      "Name": "Yldevier Magpusao",
+      "Position": "Cloud Captain",
+      "Description": "mahilig magmahal"
+    },
+    {
+      "Name": "Breindel Medina",
+      "Position": "Department Lead",
+      "Description": "mahilig magpakaboboo"
+    },
+    {
+      "Name": "Ed Ian Jay Baguio",
+      "Position": "Committee Lead",
+      "Description": "spiderman"
+    },
+    {
+      "Name": "Yldevier Magpusao",
+      "Position": "Cloud Captain",
+      "Description": "mahilig magmahal"
+    },
+    {
+      "Name": "Breindel Medina",
+      "Position": "Department Lead",
+      "Description": "mahilig magpakaboboo"
+    },
+    {
+      "Name": "Ed Ian Jay Baguio",
+      "Position": "Committee Lead",
+      "Description": "spiderman"
+    }
+  ]
+}
