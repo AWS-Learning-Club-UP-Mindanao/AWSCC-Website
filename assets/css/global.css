@@ -21,6 +21,11 @@ html {
 	src: url("../fonts/AmazonEmber_Bd.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: "Geist Bold";
+	src: url("../fonts/Geist-Bold.ttf") format("truetype");
+}
+
 /* Variables */
 :root {
 	/* Colors */
@@ -324,6 +329,22 @@ html {
 body {
 	background: linear-gradient(120deg, #3f0846 20%, #0e002d 80%);
 	height: 300vh;
+}
+
+/* Hero Section */
+.hero-buttons {
+	display: flex;
+	gap: 10px;
+}
+
+.hero-buttons > button {
+	font-family: "Geist Bold";
+	padding: 10px;
+	border-radius: 5px;
+	color: var(--white);
+	background: rgba(255,255,255,0.1);
+	border: solid 1px rgba(255,255,255,0.5);
+	cursor: pointer;
 }
 
 .centerDiv{
