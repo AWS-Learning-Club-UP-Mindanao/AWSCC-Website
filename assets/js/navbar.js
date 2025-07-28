@@ -27,7 +27,7 @@ fetch("/assets/components/navbar.html")
 // Scroll animation
 function setupNavbarScrollAnimation({
   isLanding = false,
-  scrollThreshold = 150,
+  scrollThreshold = 0,
 }) {
   const navbar = document.querySelector(".navbar");
   const navbarBG = document.querySelector(".navbar-wrapper");
