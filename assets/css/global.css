@@ -41,6 +41,11 @@ html {
 }
 
 /* Global/Reusable CSS */
+body {
+	background: linear-gradient(180deg, #0F0B26 0%, #1E003D 70%);
+	height: 300vh;
+}
+
 section {
 	height: 100vh;
 	width: 100vw;
@@ -349,14 +354,6 @@ section {
   body.dropdown {
     overflow: hidden;
   }
-}
-
-/* Page Background for Testing */
-body {
-  background: linear-gradient(120deg, #3f0846 20%, #0e002d 80%);
-  min-height: 300vh;
-  display: flex;
-  flex-direction: column;
 }
 
 /* Setting the main to a certain height for demonstration purposes for footer
