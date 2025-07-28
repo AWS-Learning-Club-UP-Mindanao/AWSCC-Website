@@ -338,6 +338,7 @@ body {
 }
 
 .hero-buttons > button {
+	display: flex;
 	font-family: "Geist Bold";
 	padding: 10px;
 	border-radius: 5px;
@@ -345,6 +346,13 @@ body {
 	background: rgba(255,255,255,0.1);
 	border: solid 1px rgba(255,255,255,0.5);
 	cursor: pointer;
+	align-items: center;
+	gap: 8px;
+}
+
+.hero-buttons > button > img {
+	height: 18px;
+	width: 18px;
 }
 
 .centerDiv{
