@@ -368,8 +368,15 @@ main {
 }
 
 /* Hero Section */
+.hero {
+	display: flex;
+	justify-content: center;
+}
+
 .hero-buttons {
 	display: flex;
+	height: fit-content;
+	margin-top: 60vh;
 	gap: 10px;
 }
 
