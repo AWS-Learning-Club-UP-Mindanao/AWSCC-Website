@@ -41,6 +41,11 @@ html {
 }
 
 /* Global/Reusable CSS */
+section {
+	height: 100vh;
+	width: 100vw;
+}
+
 .gradient-text {
   background: linear-gradient(
     135.066deg,
