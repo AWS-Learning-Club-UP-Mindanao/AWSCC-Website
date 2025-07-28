@@ -99,7 +99,7 @@ section {
 
 .navbar-blurred {
 	background: rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(40px);
+	backdrop-filter: blur(15px);
 	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 	transform: scale(1);
 	transition: backdrop-filter 0.5s, background 1s, transform 0.4s,
