@@ -166,12 +166,12 @@ section {
 }
 
 .navbar-logo {
-  position: relative;
-  height: 100px;
-  width: 100px;
-  transition: transform 1s, height 1s, width 1s;
-  margin: 80px 0 20px 0;
-  z-index: 2;
+	position: relative;
+	height: 130px;
+	width: 130px;
+	transition: transform 1s, height 1s, width 1s;
+	margin: 80px 0 20px 0;
+	z-index: 2;
 }
 
 .navbar-logo.scrolled {
@@ -192,14 +192,14 @@ section {
 }
 
 .navbar-logo-text.top {
-  font-size: 46px;
-  transition: transform 0.8s, font-size 0.8s, -webkit-text-fill-color 2.8s;
+	font-size: 52px;
+	transition: transform 0.8s, font-size 0.8s, -webkit-text-fill-color 2.8s;
 }
 
 .navbar-logo-text.bottom {
-  white-space: nowrap;
-  font-size: 26px;
-  transition: transform 0.8s, font-size 0.8s;
+	white-space: nowrap;
+	font-size: 30px;
+	transition: transform 0.8s, font-size 0.8s;
 }
 
 .navbar-logo-text.bottom::before,
@@ -323,9 +323,27 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar-dropdown-button {
-    display: block;
-  }
+	.navbar-logo {
+		height: 115px;
+		width: 115px;
+	}
+
+	.navbar-logo-text.top {
+		font-size: 46px;
+	}
+
+	.navbar-logo-text.bottom {
+		font-size: 26px;
+	}
+
+	.navbar-logo-text.bottom::before,
+	.navbar-logo-text.bottom::after {
+		display: none;
+	}
+	
+	.navbar-dropdown-button {
+		display: block;
+	}
 
   .navbar-wrapper {
     position: relative;
@@ -400,8 +418,8 @@ main {
 .hero-buttons {
 	display: flex;
 	height: fit-content;
-	margin-top: 60vh;
-	gap: 15px;
+	margin-top: 65vh;
+	gap: 20px;
 	align-items: center;
 }
 
@@ -410,7 +428,8 @@ main {
 	width: fit-content;
 	text-align: center;
 	font-family: "Geist Bold";
-	padding: 15px 25px;
+	font-size: 14px;
+	padding: 10px 30px;
 	border-radius: 5px;
 	color: var(--white);
 	background: rgba(255, 255, 255, 0.1);
@@ -418,8 +437,9 @@ main {
 	cursor: pointer;
 	align-items: center;
 	justify-content: center;
-	gap: 8px;
+	gap: 10px;
 	transition: transform 0.5s;
+	z-index: 2;
 }
 
 .hero-buttons > button:hover {
@@ -436,14 +456,14 @@ main {
 	display: flex;
 	position: absolute;
 	height: fit-content;
-	width: 145vw;
+	width: 165vw;
 	justify-content: space-between;
-	top: 38%;
+	top: 50%;
 	pointer-events: none;
 }
 
 .hero-clouds > img {
-	width: 42%;
+	width: 45%;
 }
 
 @media screen and (max-width: 768px) {
