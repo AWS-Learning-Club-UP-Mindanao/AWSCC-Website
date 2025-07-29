@@ -336,14 +336,17 @@ html {
 /* Page Background for Testing */
 body {
   background: linear-gradient(120deg, #3f0846 20%, #0e002d 80%);
-  height: 300vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Setting the main to a certain height for demonstration purposes for footer
  REMOVE ONCE THERE IS CONTENT
 */
 main {
-  height: 300vh;
+  flex: 1;
+  min-height: 50vh;
 }
 .centerDiv {
   display: flex;
