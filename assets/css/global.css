@@ -42,9 +42,15 @@ html {
 
 /* Global/Reusable CSS */
 body {
+	display: flex;
+	flex-direction: column;
 	background: linear-gradient(180deg, #0F0B26 0%, #1E003D 70%);
-	height: 300vh;
+	height: 300vh; /* Test height to show scroll animation */
 	overflow-x: hidden;
+}
+
+main {
+	flex: 1;
 }
 
 section {
@@ -382,14 +388,6 @@ section {
   body.dropdown {
     overflow: hidden;
   }
-}
-
-/* Setting the main to a certain height for demonstration purposes for footer
- REMOVE ONCE THERE IS CONTENT
-*/
-main {
-  flex: 1;
-  min-height: 50vh;
 }
 
 /* Hero Section */
@@ -1002,7 +1000,6 @@ main {
   color: var(--white);
   padding: 3rem 1rem 1rem 1rem;
   margin: auto;
-
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
