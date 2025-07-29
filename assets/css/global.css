@@ -401,6 +401,12 @@ section {
 	align-items: center;
 	justify-content: center;
 	gap: 8px;
+	transition: transform 0.5s;
+}
+
+.hero-buttons > button:hover {
+	transform: scale(1.05);
+	transition: transform 0.5s;
 }
 
 .hero-buttons > button > img {
