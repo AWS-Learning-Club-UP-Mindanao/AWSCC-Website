@@ -546,13 +546,16 @@ main {
   background: linear-gradient(to bottom, #0f0b26 0%, #1e003d 100%);
   color: var(--white);
   padding: 3rem 1rem 1rem 1rem;
-  margin-top: auto;
+  margin: auto;
+
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
