@@ -385,14 +385,12 @@ section {
 	background-position: center top;
 	-webkit-mask-image: linear-gradient(
 		to bottom,
-		transparent,
 		black 15%,
 		black 80%,
 		transparent
 	); /* Adjust direction and stop points for desired feathering */
 	mask-image: linear-gradient(
 		to bottom,
-		transparent,
 		black 15%,
 		black 80%,
 		transparent
@@ -402,7 +400,7 @@ section {
 .hero-buttons {
 	display: flex;
 	height: fit-content;
-	margin-top: 65vh;
+	margin-top: 68vh;
 	gap: 20px;
 	align-items: center;
 }
