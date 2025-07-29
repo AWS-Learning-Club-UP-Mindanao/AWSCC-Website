@@ -336,7 +336,7 @@ html {
 /* Page Background for Testing */
 body {
   background: linear-gradient(120deg, #3f0846 20%, #0e002d 80%);
-  min-height: 100vh;
+  min-height: 300vh;
   display: flex;
   flex-direction: column;
 }
