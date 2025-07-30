@@ -53,6 +53,14 @@ html {
   z-index: 1000;
 }
 
+/* Reusable Heading CSS */
+.heading {
+  font-size: 50px;
+  font-family: "Amazon Ember", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
 /* Navbar Container */
 .navbar-container {
   z-index: 1000;
@@ -539,6 +547,18 @@ main {
   .box {
     width: 750px;
   }
+}
+
+/* Events CSS */
+.events-section {
+  margin-top: 20px;
+  color: white;
+  font-family: "Amazon Ember Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 40px;
+  gap: 30px;
 }
 
 /* FOOTER STYLES */
