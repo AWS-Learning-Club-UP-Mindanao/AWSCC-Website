@@ -610,7 +610,6 @@ main {
   border-radius: 15px;
   padding: 0;
   border: 3px solid rgba(187, 187, 187, 0.452);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   position: relative;
 }
@@ -717,7 +716,7 @@ main {
   background: rgba(255, 255, 255, 0);
   border: none;
   color: white;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
