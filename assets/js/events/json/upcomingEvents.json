@@ -1,0 +1,40 @@
+{
+  "upcomingEvents": [
+    {
+      "title": "First Line of Defense: AWS Account Security 101 with IAM",
+      "description": "Learn security best practices and set up your first AWS account to get into managing AWS functions and security for personal, corporate and financial users.",
+      "posterImage": "../assets/img/events/temp_banner_1.png",
+      "tags": ["Security", "IAM", "Beginner"]
+    },
+    {
+      "title": "First Line of Defense: AWS Account Security 101 with IAM",
+      "description": "Learn security best practices and set up your first AWS account to get into managing AWS functions and security for personal, corporate and financial users.",
+      "posterImage": "../assets/img/events/temp_banner_1.png",
+      "tags": ["Security", "IAM", "Beginner"]
+    },
+    {
+      "title": "First Line of Defense: AWS Account Security 101 with IAM",
+      "description": "Learn security best practices and set up your first AWS account to get into managing AWS functions and security for personal, corporate and financial users.",
+      "posterImage": "../assets/img/events/temp_banner_1.png",
+      "tags": ["Security", "IAM", "Beginner"]
+    },
+    {
+      "title": "First Line of Defense: AWS Account Security 101 with IAM",
+      "description": "Learn security best practices and set up your first AWS account to get into managing AWS functions and security for personal, corporate and financial users.",
+      "posterImage": "../assets/img/events/temp_banner_1.png",
+      "tags": ["Security", "IAM", "Beginner"]
+    },
+    {
+      "title": "First Line of Defense: AWS Account Security 101 with IAM",
+      "description": "Learn security best practices and set up your first AWS account to get into managing AWS functions and security for personal, corporate and financial users.",
+      "posterImage": "../assets/img/events/temp_banner_1.png",
+      "tags": ["Security", "IAM", "Beginner"]
+    },
+    {
+      "title": "More Coming Soon",
+      "description": "Stay tuned for more exciting events and workshops coming your way!",
+      "posterImage": null,
+      "isComingSoon": true
+    }
+  ]
+}

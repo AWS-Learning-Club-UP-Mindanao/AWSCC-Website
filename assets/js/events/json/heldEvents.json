@@ -1,0 +1,34 @@
+{
+  "heldEvents": [
+    {
+      "title": "Amazon Elastic Compute Cloud: Backbone of AWS",
+      "description": "Learn how to launch, configure, and manage virtual servers with scalable, secure, and reliable applications. This workshop covers everything you need to know about setting up instances, managing storage and deploying applications on AWS's powerful platform.",
+      "posterImage": "../assets/img/events/temp_banner_2.png",
+      "tags": ["EC2", "Cloud Computing", "Infrastructure"]
+    },
+    {
+      "title": "Amazon Elastic Compute Cloud: Backbone of AWS",
+      "description": "Learn how to launch, configure, and manage virtual servers with scalable, secure, and reliable applications. This workshop covers everything you need to know about setting up instances, managing storage and deploying applications on AWS's powerful platform.",
+      "posterImage": "../assets/img/events/temp_banner_2.png",
+      "tags": ["EC2", "Cloud Computing", "Infrastructure"]
+    },
+    {
+      "title": "Amazon Elastic Compute Cloud: Backbone of AWS",
+      "description": "Learn how to launch, configure, and manage virtual servers with scalable, secure, and reliable applications. This workshop covers everything you need to know about setting up instances, managing storage and deploying applications on AWS's powerful platform.",
+      "posterImage": "../assets/img/events/temp_banner_2.png",
+      "tags": ["EC2", "Cloud Computing", "Infrastructure"]
+    },
+    {
+      "title": "Amazon Elastic Compute Cloud: Backbone of AWS",
+      "description": "Learn how to launch, configure, and manage virtual servers with scalable, secure, and reliable applications. This workshop covers everything you need to know about setting up instances, managing storage and deploying applications on AWS's powerful platform.",
+      "posterImage": "../assets/img/events/temp_banner_2.png",
+      "tags": ["EC2", "Cloud Computing", "Infrastructure"]
+    },
+    {
+      "title": "Amazon Elastic Compute Cloud: Backbone of AWS",
+      "description": "Learn how to launch, configure, and manage virtual servers with scalable, secure, and reliable applications. This workshop covers everything you need to know about setting up instances, managing storage and deploying applications on AWS's powerful platform.",
+      "posterImage": "../assets/img/events/temp_banner_2.png",
+      "tags": ["EC2", "Cloud Computing", "Infrastructure"]
+    }
+  ]
+}
