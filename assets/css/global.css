@@ -53,6 +53,14 @@ html {
   z-index: 1000;
 }
 
+/* Reusable Heading CSS */
+.heading {
+  font-size: 50px;
+  font-family: "Amazon Ember", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
 /* Navbar Container */
 .navbar-container {
   z-index: 1000;
@@ -538,6 +546,334 @@ main {
   }
   .box {
     width: 750px;
+  }
+}
+
+/* Events CSS */
+.events-section {
+  margin-top: 10px;
+  color: white;
+  font-family: "Amazon Ember Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 80px;
+  gap: 30px;
+}
+
+.events-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Upcoming Events Styles */
+#upcoming-events-list {
+  position: relative;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upcoming-events-scroll {
+  flex: 1;
+  overflow: hidden;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upcoming-events-cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  justify-content: flex-start;
+  min-width: 100%;
+  max-width: calc(3 * 320px + 2 * 20px + 40px);
+}
+
+.upcoming-events-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.upcoming-event-card {
+  flex: 0 0 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 0;
+  border: 3px solid rgba(187, 187, 187, 0.452);
+  overflow: hidden;
+  position: relative;
+}
+
+.upcoming-event-card.coming-soon {
+  background: rgba(255, 255, 255, 0.05);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Common Event Card Styles */
+.event-poster {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.held-event-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  padding: 15px;
+  background: rgba(26, 15, 46, 0.9);
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.event-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  line-height: 1.2;
+  color: white;
+  font-family: "Amazon Ember Display", sans-serif;
+}
+
+.event-description {
+  font-size: 1rem;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-family: "Amazon Ember Display", sans-serif;
+}
+
+.event-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.event-tag {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 4px 0px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-family: "Amazon Ember Display", sans-serif;
+}
+
+/* Upcoming Events Specific Styles */
+.upcoming-event-card.coming-soon .event-card-content {
+  background: rgba(26, 15, 46, 0.103);
+}
+
+.upcoming-event-card.coming-soon .event-title {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.coming-soon-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.coming-soon-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.coming-soon-content .event-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.scroll-arrow {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  color: white;
+  font-size: 3.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  transition: all 0.3s ease;
+}
+
+.scroll-arrow:hover {
+  transform: scale(1.1);
+}
+
+.scroll-arrow:active {
+  transform: scale(0.95);
+}
+
+/* Held Events Styles */
+.held-events-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.held-event-card {
+  display: flex;
+  background: transparent;
+  border-radius: 15px;
+  border: 3px solid rgba(187, 187, 187, 0.452);
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.held-event-left {
+  flex: 0 0 70%;
+  padding: 30px 300px 30px 100px;
+  background: linear-gradient(135deg, #2a1f4f 0%, #1a0f2e 100%);
+  display: flex;
+  align-items: center;
+}
+
+.held-event {
+  width: 100%;
+}
+
+.held-event-right {
+  flex: 0 0 30%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.held-event-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.held-event-content h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  color: white;
+}
+
+.held-event-content .event-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 1600px) {
+  .upcoming-event-card {
+    flex: 0 0 340px;
+    width: 340px;
+    height: 340px;
+  }
+  
+  .upcoming-events-cards {
+    max-width: calc(3 * 300px + 2 * 20px + 40px);
+  }
+  
+  .event-title {
+    font-size: 0.95rem;
+  }
+  
+  .event-description {
+    font-size: 0.75rem;
+  }
+  
+  .event-tag {
+    font-size: 0.7rem;
+  }
+
+  .held-event-left {
+    padding: 30px 250px 30px 100px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .upcoming-event-card {
+    flex: 0 0 300px;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .upcoming-events-cards {
+    max-width: calc(3 * 200px + 2 * 20px + 40px);
+  }
+  
+  .event-title {
+    font-size: 0.9rem;
+  }
+  
+  .event-description {
+    font-size: 0.7rem;
+  }
+  
+  .event-tag {
+    font-size: 0.65rem;
+  }
+
+  .held-event-left {
+    padding: 30px 200px 30px 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .upcoming-event-card {
+    flex: 0 0 260px;
+    width: 260px;
+    height: 260px;
+  }
+  
+  .upcoming-events-cards {
+    max-width: calc(3 * 200px + 2 * 20px + 40px);
+    gap: 15px;
+  }
+  
+  .event-title {
+    font-size: 0.85rem;
+  }
+  
+  .event-description {
+    font-size: 0.65rem;
+  }
+  
+  .event-tag {
+    font-size: 0.6rem;
+  }
+
+  .held-event-left {
+    padding: 30px 150px 30px 100px;
   }
 }
 
