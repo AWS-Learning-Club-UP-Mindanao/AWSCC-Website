@@ -27,11 +27,12 @@ fetch("/assets/components/navbar.html")
 // Scroll animation
 function setupNavbarScrollAnimation({
   isLanding = false,
-  scrollThreshold = 150,
+  scrollThreshold = 0,
 }) {
   const navbar = document.querySelector(".navbar");
   const navbarBG = document.querySelector(".navbar-wrapper");
   const logo = document.querySelector(".navbar-logo");
+  const texts = document.querySelector(".navbar-logo-text-wrapper");
   const text1 = document.querySelector(".navbar-logo-text.top");
   const text2 = document.querySelector(".navbar-logo-text.bottom");
 
@@ -55,6 +56,7 @@ function setupNavbarScrollAnimation({
     if (window.scrollY > scrollThreshold) {
       navbar.classList.add(scrolled);
       logo.classList.add(scrolled);
+      texts.classList.add(scrolled);
       text1.classList.add(scrolled);
       text2.classList.add(scrolled);
       navbarBG.classList.add(blurredNav);
@@ -62,6 +64,7 @@ function setupNavbarScrollAnimation({
     } else {
       navbar.classList.remove(scrolled);
       logo.classList.remove(scrolled);
+      texts.classList.remove(scrolled);
       text1.classList.remove(scrolled);
       text2.classList.remove(scrolled);
       navbarBG.classList.remove(blurredNav);

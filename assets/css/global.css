@@ -19,6 +19,17 @@ html {
 @font-face {
   font-family: "Amazon Ember";
   src: url("../fonts/AmazonEmber_Bd.ttf") format("truetype");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Geist Bold";
+	src: url("../fonts/Geist-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Geist ExtraBold";
+	src: url("../fonts/Geist-ExtraBold.ttf") format("truetype");
 }
 
 /* Variables */
@@ -30,27 +41,45 @@ html {
 
   /* For Nav Animation */
   --logoToNav: -132px;
-  --logoTextToNav: -188px;
+  --logoTextToNav: -185px;
   --leftmost: -50vw;
   --rightmost: 50vw;
 }
 
 /* Global/Reusable CSS */
+body {
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(180deg, #0F0B26 0%, #1E003D 70%);
+	height: 300vh; /* Test height to show scroll animation */
+	overflow-x: hidden;
+}
+
+main {
+	flex: 1;
+}
+
+section {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+}
+
 .gradient-text {
-  background: linear-gradient(
-    135.066deg,
-    #ffffff 18%,
-    #bbaffd 47%,
-    #efdcf1 110%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent !important;
+	background: linear-gradient(
+		135.066deg,
+		#ffffff 18%,
+		#bbaffd 47%,
+		#efdcf1 110%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent !important;
 }
 
 /* Reusable for Navbar Div */
 #navbar-component-static {
-  min-height: 100px;
-  z-index: 1000;
+	min-height: 100px;
+	z-index: 1000;
 }
 
 /* Reusable Heading CSS */
@@ -63,38 +92,37 @@ html {
 
 /* Navbar Container */
 .navbar-container {
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  min-height: 100px;
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
 }
 
 /* Navbar Wrapper */
 .navbar-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100vw;
-  height: 70px;
-  padding: 30px 0 20px 0;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0);
-  transform: scale(1, 0.9);
-  transition: backdrop-filter 0.5s, background 1.4s, transform 1s,
-    box-shadow 0.5s;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100vw;
+	height: 70px;
+	padding: 30px 0 20px 0;
+	box-shadow: 0 5px 30px rgba(0, 0, 0, 0);
+	transform: scale(1, 0.9);
+	transition: backdrop-filter 0.5s, background 1.4s, transform 1s,
+		box-shadow 0.5s;
 }
 
 .navbar-blurred {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(40px);
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
-  transform: scale(1);
-  transition: backdrop-filter 0.5s, background 1s, transform 0.4s,
-    box-shadow 0.5s;
-  transition-delay: 0.6s;
+	background: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(15px);
+	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+	transform: scale(1);
+	transition: backdrop-filter 0.5s, background 1s, transform 0.4s,
+		box-shadow 0.5s;
+	transition-delay: 0.6s;
 }
 
 /* Navbar */
@@ -140,26 +168,40 @@ html {
 }
 
 /* Navbar Logo */
+.navbar-logo-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 70px;
+	pointer-events: none;
+}
+
 .navbar-logo {
-  position: relative;
-  height: 100px;
-  width: 100px;
-  transition: transform 1s, height 1s, width 1s;
-  margin: 80px 0 20px 0;
-  z-index: 2;
+	position: relative;
+	height: 135px;
+	width: 135px;
+	transition: transform 1s, margin 1s, height 1s, width 1s;
+	margin: 80px 0 20px 0;
+	z-index: 2;
 }
 
 .navbar-logo.scrolled {
   height: 40px;
   width: 40px;
   transform: translate(calc(var(--leftmost) + 3rem), var(--logoToNav));
-  transition: transform 1s, height 1s, width 1s;
+	transition: transform 1s, margin 1s, height 1s, width 1s;
+}
+
+.navbar-logo-text-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
 }
 
 .navbar-logo-text {
   position: relative;
   justify-self: center;
-  font-family: "Amazon Ember", sans-serif;
   font-weight: bold;
   text-align: center;
   -webkit-text-fill-color: var(--white);
@@ -167,14 +209,18 @@ html {
 }
 
 .navbar-logo-text.top {
-  font-size: 46px;
-  transition: transform 0.8s, font-size 0.8s, -webkit-text-fill-color 2.8s;
+  font-family: "Geist ExtraBold", sans-serif;
+	font-size: 52px;
+	transition: transform 0.8s, font-size 0.8s, -webkit-text-fill-color 2.8s;
 }
 
 .navbar-logo-text.bottom {
-  white-space: nowrap;
-  font-size: 26px;
-  transition: transform 0.8s, font-size 0.8s;
+  font-family: "Amazon Ember", sans-serif;
+	white-space: nowrap;
+	font-size: 30px;
+	transition: transform 0.8s, font-size 0.8s;
+	flex-direction: row;
+	align-items: center;
 }
 
 .navbar-logo-text.bottom::before,
@@ -203,12 +249,12 @@ html {
 }
 
 .navbar-logo-text.scrolled.bottom {
-  transform: translate(
-    calc(var(--leftmost) + 8rem - 0.58rem),
-    var(--logoTextToNav)
-  );
-  font-size: 12px;
-  transition: transform 1.2s, font-size 1.2s;
+	transform: translate(
+		calc(var(--leftmost) + 8rem - 0.8rem),
+		var(--logoTextToNav)
+	);
+	font-size: 12px;
+	transition: transform 1.2s, font-size 1.2s;
 }
 
 /* Static State */
@@ -231,12 +277,12 @@ html {
 }
 
 .navbar-logo-text.static.bottom {
-  transform: translate(
-    calc(--var(leftmost) + 8rem - 0.58rem),
-    var(--logoTextToNav)
-  );
-  font-size: 12px;
-  transition: none !important;
+	transform: translate(
+		calc(--var(leftmost) + 8rem - 0.8rem),
+		var(--logoTextToNav)
+	);
+	font-size: 12px;
+	transition: none !important;
 }
 
 /* Dropdown Button */
@@ -249,6 +295,11 @@ html {
   border: none;
   cursor: pointer;
   padding: 0 2.5rem;
+}
+
+.navbar-dropdown-button > img {
+	height: 18px;
+	width: 18px;
 }
 
 /* Dropdown Header */
@@ -298,9 +349,41 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar-dropdown-button {
-    display: block;
-  }
+	.navbar-logo {
+		margin: 40px 0 40px 0;
+	}
+
+	.navbar-logo.scrolled {
+		margin: 80px 0 20px 0;
+	}
+
+	.navbar-logo-text-wrapper {
+		gap: 15px;
+		transition: gap 0.5s;
+	}
+
+	.navbar-logo-text-wrapper.scrolled {
+		gap: 0px;
+		transition: gap 0.5s;
+	}
+
+	.navbar-logo-text.top {
+		font-size: 54px;
+		line-height: 1;
+	}
+
+	.navbar-logo-text.bottom {
+		font-size: 24px;
+	}
+
+	.navbar-logo-text.bottom::before,
+	.navbar-logo-text.bottom::after {
+		display: none;
+	}
+	
+	.navbar-dropdown-button {
+		display: block;
+	}
 
   .navbar-wrapper {
     position: relative;
@@ -341,26 +424,107 @@ html {
   }
 }
 
-/* Page Background for Testing */
-body {
-  background: linear-gradient(120deg, #3f0846 20%, #0e002d 80%);
-  min-height: 300vh;
-  display: flex;
-  flex-direction: column;
+/* Hero Section */
+.hero {
+	display: flex;
+	justify-content: center;
+	-webkit-mask-image: linear-gradient(
+		to bottom,
+		black 15%,
+		black 80%,
+		transparent
+	); /* Adjust direction and stop points for desired feathering */
+	mask-image: linear-gradient(
+		to bottom,
+		black 15%,
+		black 80%,
+		transparent
+	);
 }
 
-/* Setting the main to a certain height for demonstration purposes for footer
- REMOVE ONCE THERE IS CONTENT
-*/
-main {
-  flex: 1;
-  min-height: 50vh;
+.hero-gradient {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	align-self: center;
+	transform: scale(2.3, 2.5) rotate(-5deg) translate(-8%, -4%);
 }
+
+.hero-buttons {
+	display: flex;
+	height: fit-content;
+	margin-top: 68vh;
+	gap: 20px;
+	align-items: center;
+	transition: margin 1s;
+}
+
+.hero-buttons > button {
+	display: flex;
+	width: fit-content;
+	text-align: center;
+	font-family: "Geist Bold";
+	font-size: 14px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: var(--white);
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(28px);
+	border: solid 1px rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	transition: transform 0.5s;
+	z-index: 2;
+}
+
+.hero-buttons > button:hover {
+	transform: scale(1.05);
+	transition: transform 0.5s;
+}
+
+.hero-buttons > button > img {
+	height: 18px;
+	width: 18px;
+}
+
+.hero-clouds {
+	display: flex;
+	position: absolute;
+	height: fit-content;
+	width: 165vw;
+	justify-content: space-between;
+	top: 50%;
+	pointer-events: none;
+}
+
+.hero-clouds > img {
+	width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+
+	.hero-gradient {
+		transform: scale(3.1, 3.3) rotate(-0deg) translate(-4.5%, 1.5%);
+	}
+
+	.hero-buttons {
+		flex-direction: column;
+		margin-top: 75vh;
+		transition: margin 1s;
+	}
+
+	.hero-clouds {
+		display: none;
+	}
+}
+
 .centerDiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Leads Section */
@@ -375,7 +539,7 @@ main {
 #leads-component,
 #deptHeads-component,
 #committeeHeads-component {
-  margin-top: 70px;
+	margin-top: 70px;
 }
 
 .leads-heading,
@@ -412,59 +576,59 @@ main {
 
 /* Officer Card */
 .officer-card {
-  position: relative;
-  z-index: 1;
-  width: 250px;
-  border: 1px var(--officerBorderColor) solid;
-  border-radius: 10px;
-  background-color: var(--officerBgColor);
-  overflow: hidden;
+	position: relative;
+	z-index: 1;
+	width: 250px;
+	border: 1px var(--officerBorderColor) solid;
+	border-radius: 10px;
+	background-color: var(--officerBgColor);
+	overflow: hidden;
 }
 
 .officer-info {
-  position: absolute;
-  bottom: 0;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  width: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+	position: absolute;
+	bottom: 0;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 }
 
 .officer-name {
-  color: #e5e5e5;
-  font-family: "Amazon Ember", sans-serif;
-  font-size: 16px;
+	color: #e5e5e5;
+	font-family: "Amazon Ember", sans-serif;
+	font-size: 16px;
 }
 
 .officer-position {
-  color: #e5e5e5;
-  font-weight: 10;
-  font-family: "Amazon Ember Display", sans-serif;
-  font-size: 14px;
+	color: #e5e5e5;
+	font-weight: 10;
+	font-family: "Amazon Ember Display", sans-serif;
+	font-size: 14px;
 }
 
 .officer-desc {
-  color: #e5e5e5;
-  padding-top: 6px;
-  font-family: "Amazon Ember Display", sans-serif;
-  font-size: 12px;
+	color: #e5e5e5;
+	padding-top: 6px;
+	font-family: "Amazon Ember Display", sans-serif;
+	font-size: 12px;
 }
 
 .headShot {
-  width: 100%;
-  display: block;
+	width: 100%;
+	display: block;
 }
 
 .headShot::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50%; /* adjust height of overlay */
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  backdrop-filter: blur(6px);
-  pointer-events: none;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%; /* adjust height of overlay */
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+	backdrop-filter: blur(6px);
+	pointer-events: none;
 }
 
 /* ABOUT // DRAFT ONLY YET */
@@ -883,7 +1047,6 @@ main {
   color: var(--white);
   padding: 3rem 1rem 1rem 1rem;
   margin: auto;
-
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
