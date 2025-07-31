@@ -1,4 +1,4 @@
-import { initiateNavBar } from "../navbar.js";
+import initiateNavBar from "../navbar.js";
 import {
   renderLeads,
   renderDepartmentHeads,
