@@ -195,6 +195,8 @@ section {
   width: 40px;
   transform: translate(calc(var(--leftmost) + 3rem), var(--logoToNav));
 	transition: transform 1s, margin 1s, height 1s, width 1s;
+	pointer-events: auto;
+	cursor: pointer;
 }
 
 .navbar-logo-text-wrapper {
