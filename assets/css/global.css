@@ -19,11 +19,17 @@ html {
 @font-face {
   font-family: "Amazon Ember";
   src: url("../fonts/AmazonEmber_Bd.ttf") format("truetype");
+	font-weight: 600;
 }
 
 @font-face {
 	font-family: "Geist Bold";
 	src: url("../fonts/Geist-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Geist ExtraBold";
+	src: url("../fonts/Geist-ExtraBold.ttf") format("truetype");
 }
 
 /* Variables */
@@ -35,7 +41,7 @@ html {
 
   /* For Nav Animation */
   --logoToNav: -132px;
-  --logoTextToNav: -188px;
+  --logoTextToNav: -185px;
   --leftmost: -50vw;
   --rightmost: 50vw;
 }
@@ -173,9 +179,9 @@ section {
 
 .navbar-logo {
 	position: relative;
-	height: 130px;
-	width: 130px;
-	transition: transform 1s, height 1s, width 1s;
+	height: 135px;
+	width: 135px;
+	transition: transform 1s, margin 1s, height 1s, width 1s;
 	margin: 80px 0 20px 0;
 	z-index: 2;
 }
@@ -184,13 +190,18 @@ section {
   height: 40px;
   width: 40px;
   transform: translate(calc(var(--leftmost) + 3rem), var(--logoToNav));
-  transition: transform 1s, height 1s, width 1s;
+	transition: transform 1s, margin 1s, height 1s, width 1s;
+}
+
+.navbar-logo-text-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
 }
 
 .navbar-logo-text {
   position: relative;
   justify-self: center;
-  font-family: "Amazon Ember", sans-serif;
   font-weight: bold;
   text-align: center;
   -webkit-text-fill-color: var(--white);
@@ -198,14 +209,18 @@ section {
 }
 
 .navbar-logo-text.top {
+  font-family: "Geist ExtraBold", sans-serif;
 	font-size: 52px;
 	transition: transform 0.8s, font-size 0.8s, -webkit-text-fill-color 2.8s;
 }
 
 .navbar-logo-text.bottom {
+  font-family: "Amazon Ember", sans-serif;
 	white-space: nowrap;
 	font-size: 30px;
 	transition: transform 0.8s, font-size 0.8s;
+	flex-direction: row;
+	align-items: center;
 }
 
 .navbar-logo-text.bottom::before,
@@ -235,7 +250,7 @@ section {
 
 .navbar-logo-text.scrolled.bottom {
 	transform: translate(
-		calc(var(--leftmost) + 8rem - 0.58rem),
+		calc(var(--leftmost) + 8rem - 0.8rem),
 		var(--logoTextToNav)
 	);
 	font-size: 12px;
@@ -263,7 +278,7 @@ section {
 
 .navbar-logo-text.static.bottom {
 	transform: translate(
-		calc(--var(leftmost) + 8rem - 0.58rem),
+		calc(--var(leftmost) + 8rem - 0.8rem),
 		var(--logoTextToNav)
 	);
 	font-size: 12px;
@@ -280,6 +295,11 @@ section {
   border: none;
   cursor: pointer;
   padding: 0 2.5rem;
+}
+
+.navbar-dropdown-button > img {
+	height: 18px;
+	width: 18px;
 }
 
 /* Dropdown Header */
@@ -330,16 +350,30 @@ section {
 
 @media screen and (max-width: 768px) {
 	.navbar-logo {
-		height: 115px;
-		width: 115px;
+		margin: 40px 0 40px 0;
+	}
+
+	.navbar-logo.scrolled {
+		margin: 80px 0 20px 0;
+	}
+
+	.navbar-logo-text-wrapper {
+		gap: 15px;
+		transition: gap 0.5s;
+	}
+
+	.navbar-logo-text-wrapper.scrolled {
+		gap: 0px;
+		transition: gap 0.5s;
 	}
 
 	.navbar-logo-text.top {
-		font-size: 46px;
+		font-size: 54px;
+		line-height: 1;
 	}
 
 	.navbar-logo-text.bottom {
-		font-size: 26px;
+		font-size: 24px;
 	}
 
 	.navbar-logo-text.bottom::before,
@@ -394,9 +428,6 @@ section {
 .hero {
 	display: flex;
 	justify-content: center;
-	background: url("../img/element_1.png");
-	background-size: cover;
-	background-position: center top;
 	-webkit-mask-image: linear-gradient(
 		to bottom,
 		black 15%,
@@ -411,12 +442,21 @@ section {
 	);
 }
 
+.hero-gradient {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	align-self: center;
+	transform: scale(2.3, 2.5) rotate(-5deg) translate(-8%, -4%);
+}
+
 .hero-buttons {
 	display: flex;
 	height: fit-content;
 	margin-top: 68vh;
 	gap: 20px;
 	align-items: center;
+	transition: margin 1s;
 }
 
 .hero-buttons > button {
@@ -464,8 +504,15 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+
+	.hero-gradient {
+		transform: scale(3.1, 3.3) rotate(-0deg) translate(-4.5%, 1.5%);
+	}
+
 	.hero-buttons {
 		flex-direction: column;
+		margin-top: 75vh;
+		transition: margin 1s;
 	}
 
 	.hero-clouds {
