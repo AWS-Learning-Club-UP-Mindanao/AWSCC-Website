@@ -508,6 +508,10 @@ section {
 }
 
 /* Department Heads Section */
+#officers-component {
+	margin-top: 140px;
+}
+
 #leads-component,
 #deptHeads-component,
 #committeeHeads-component {
