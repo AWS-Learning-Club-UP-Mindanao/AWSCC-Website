@@ -257,34 +257,6 @@ section {
 	transition: transform 1.2s, font-size 1.2s;
 }
 
-/* Static State */
-.navbar.static {
-  transform: translateX(calc(var(--rightmost) - 15rem));
-  transition: none !important;
-}
-
-.navbar-logo.static {
-  height: 50px;
-  width: 50px;
-  transform: translate(calc(var(--leftmost) + 3rem), var(--logoToNav));
-  transition: none !important;
-}
-
-.navbar-logo-text.static.top {
-  transform: translate(calc(var(--leftmost) + 8rem), var(--logoTextToNav));
-  font-size: 12px;
-  transition: none !important;
-}
-
-.navbar-logo-text.static.bottom {
-	transform: translate(
-		calc(--var(leftmost) + 8rem - 0.8rem),
-		var(--logoTextToNav)
-	);
-	font-size: 12px;
-	transition: none !important;
-}
-
 /* Dropdown Button */
 .navbar-dropdown-button {
   display: none;
