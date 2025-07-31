@@ -77,9 +77,13 @@ section {
 }
 
 /* Reusable for Navbar Div */
-#navbar-component-static {
+#navbar-component {
 	min-height: 100px;
 	z-index: 1000;
+}
+
+#navbar-component.main {
+	min-height: 0;
 }
 
 /* Reusable Heading CSS */
@@ -508,10 +512,6 @@ section {
 }
 
 /* Department Heads Section */
-#officers-component {
-	margin-top: 140px;
-}
-
 #leads-component,
 #deptHeads-component,
 #committeeHeads-component {

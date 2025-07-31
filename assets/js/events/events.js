@@ -1,15 +1,14 @@
-import { initiateStaticNavBar } from "../navbar-static.js";
+import initiateNavBar from "../navbar.js";
 import { renderUpcomingEvents, renderHeldEvents } from "./renderEvents.js";
-
-const container = document.getElementById("navbar-component-static");
 
 const upcomingEventsContainer = document.getElementById("upcoming-events-list");
 const heldEventsContainer = document.getElementById("held-events-list");
 
-initiateStaticNavBar(container);
+initiateNavBar();
 
 // Render events when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   renderUpcomingEvents(upcomingEventsContainer);
   renderHeldEvents(heldEventsContainer);
 });
+
