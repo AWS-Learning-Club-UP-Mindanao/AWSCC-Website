@@ -610,7 +610,7 @@ section {
 	pointer-events: none;
 }
 
-/* ABOUT // DRAFT ONLY YET */
+/* ABOUT PAGE */
 .firstDiv {
   display: flex;
   flex-direction: column;
@@ -621,7 +621,9 @@ section {
 
 #about-text {
   text-align: center;
-  width: 700px;
+  width: 100%;
+  max-width: 700px; 
+  padding: 0 15px;  
 }
 
 .club-logo {
@@ -645,6 +647,11 @@ section {
   align-items: center;
   padding: 40px 20px;
   gap: 30px;
+}
+
+.box {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .box {
@@ -676,6 +683,8 @@ section {
   font-size: 18px;
   line-height: 1.6;
   font-weight: 300;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .box strong {
@@ -683,14 +692,82 @@ section {
   color: #ffffff;
 }
 
-@media (min-width: 768px) {
-  .statements {
-    justify-content: center;
+@media (max-width: 768px) {
+  #about-text,
+  .about-description {
+    padding: 0 10px;
   }
+
+  #about-text {
+    max-width: 90%;
+  }
+
+  .club-logo {
+    width: 120px;
+  }
+
+  .about-description {
+    font-size: 18px;
+  }
+
+  .statements {
+    padding: 25px 15px;
+    gap: 20px;
+  }
+
   .box {
-    width: 750px;
+    padding: 20px;
+    max-width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .box h2 {
+    font-size: 22px;
+  }
+
+  .box p {
+    font-size: 16px;
+  }
+
+  .officers-heading {
+    font-size: 28px;
+    white-space: nowrap;
   }
 }
+
+@media (max-width: 480px) {
+  .club-logo {
+    width: 100px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .statements {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .box {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .box h2 {
+    font-size: 20px;
+  }
+
+  .box p {
+    font-size: 15px;
+  }
+
+  .officers-heading {
+    font-size: 22px;
+    white-space: nowrap;
+  }
+}
+
 
 /* Events CSS */
 .events-section {
