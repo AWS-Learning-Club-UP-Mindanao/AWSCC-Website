@@ -609,11 +609,11 @@ section {
 	display: block;
   z-index: 0;
   transition: transform 0.4s ease-in-out;
-  clip-path: inset(0px 0px 1px 0px); 
+  clip-path: inset(0px 0px 2px 0px); 
 }
 
 .officer-card:hover .headShot{
-  transform: scale(1.15) translateY(-22px);
+  transform: scale(1.15) translateY(-23px);
   overflow: visible;
 }
 
