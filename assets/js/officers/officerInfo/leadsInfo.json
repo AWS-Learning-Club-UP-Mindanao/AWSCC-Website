@@ -1,19 +1,22 @@
 {
-  "Leads":[
+  "Leads": [
     {
       "Name": "Medina, Breindel",
       "Position": "Department Lead",
-      "Description": "mahilig magpakaboboo"
+      "Description": "mahilig magpakaboboo",
+      "Image": "deptLead.png"
     },
     {
       "Name": "Magpusao, Yldevier John",
       "Position": "Cloud Captain",
-      "Description": "mahilig magmahal"
+      "Description": "mahilig magmahal",
+      "Image": "cloudCaptain.png"
     },
     {
       "Name": "Baguio, Ed Ian Jay",
       "Position": "Committee Lead",
-      "Description": "spiderman"
+      "Description": "spiderman",
+      "Image": "committeeLead.png"
     }
   ]
 }

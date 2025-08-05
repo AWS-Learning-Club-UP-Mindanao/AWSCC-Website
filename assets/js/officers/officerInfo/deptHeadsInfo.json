@@ -1,64 +1,76 @@
 {
-  "departmentHeads":[
+  "departmentHeads": [
     {
       "Name": "Senoy, Kyle",
       "Position": "Networking Head",
-      "Description": "kaon para dili mabrader"
+      "Description": "kaon para dili mabrader",
+      "Image": "networkingHead.png"
     },
     {
       "Name": "Lo Priego, Carlos Don",
       "Position": "Networking Co-Head",
-      "Description": "mahilig magpakaboboo"
+      "Description": "mahilig magpakaboboo",
+      "Image": "networkingCoHead.png"
     },
     {
       "Name": "Natividad, Deniel Dave",
       "Position": "Cloud Computing Head",
-      "Description": "quote? kanang di ko lamigon"
+      "Description": "quote? kanang di ko lamigon",
+      "Image": "cloudComputeHead.png"
     },
     {
       "Name": "Morgia, Maron",
       "Position": "Cloud Computing Co-Head",
-      "Description": "Cris himoi ko quote"
+      "Description": "Cris himoi ko quote",
+      "Image": "cloudComputeCoHead.png"
     },
     {
       "Name": "Albinda, Alex Neal",
       "Position": "Data Analytics Head",
-      "Description": "Ang haba hehe"
+      "Description": "Ang haba hehe",
+      "Image": "dataAnalyticsHead.png"
     },
     {
       "Name": "Bihag, Raphael",
       "Position": "Data Analytics Co-Head",
-      "Description": "wala koy quote mabutang grahh"
+      "Description": "wala koy quote mabutang grahh",
+      "Image": "dataAnalyticsCoHead.png"
     },
     {
       "Name": "Peña, Mark Jaily",
       "Position": "Machine Learning Head",
-      "Description": "Give me a random quote for our officers' posting"
+      "Description": "Give me a random quote for our officers' posting",
+      "Image": "mlHead.png"
     },
     {
       "Name": "Lambayao, Liarrah Daniya",
       "Position": "Machine Learning Co-Head",
-      "Description": "Sure! Here is a quote for you: 'The best way to predict the future is to create it.' - Peter Drucker"
+      "Description": "Sure! Here is a quote for you: 'The best way to predict the future is to create it.' - Peter Drucker",
+      "Image": "mlCoHead.png"
     },
     {
       "Name": "Jomuad, Precious Mae",
       "Position": "Security Head",
-      "Description": "Dito mo yan gawin sa Nabunturan! - Francis Nabunturan"
+      "Description": "Dito mo yan gawin sa Nabunturan! - Francis Nabunturan",
+      "Image": "securityHead.png"
     },
     {
       "Name": "Taclindo, Borgy Lance",
       "Position": "Security Co-Head",
-      "Description": "You are bound by nothing"
+      "Description": "You are bound by nothing",
+      "Image": "securityCoHead.png"
     },
     {
       "Name": "Veloso, Justin Dominic",
       "Position": "Software & Web Development Head",
-      "Description": "If you don't take risks, you can't create a future"
+      "Description": "If you don't take risks, you can't create a future",
+      "Image": "s&dHead.png"
     },
     {
       "Name": "Medina, Breindel",
       "Position": "Software & Web Development Co-Head",
-      "Description": "Kaya ako di natutulog, binabantayan ko lang sarili ko"
+      "Description": "Kaya ako di natutulog, binabantayan ko lang sarili ko",
+      "Image": "s&dCoHead.png"
     }
   ]
 }
