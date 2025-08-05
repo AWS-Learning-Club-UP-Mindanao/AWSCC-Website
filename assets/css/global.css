@@ -541,8 +541,6 @@ section.hero {
 .why-us {
   position: relative;
   padding: 80px 40px;
-  overflow-x: hidden;
-  overflow-y: visible;
   min-height: 100vh;
 }
 
@@ -555,6 +553,7 @@ section.hero {
   transform: translate(-50%, -50%) scale(3.5, 3.8);
   z-index: 1;
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .grid-dots {
