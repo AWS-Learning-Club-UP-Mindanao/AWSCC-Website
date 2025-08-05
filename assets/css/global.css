@@ -568,11 +568,13 @@ section {
 .officer-info {
 	position: absolute;
 	bottom: 0;
+  height: 150px;
 	padding-left: 10px;
 	padding-bottom: 10px;
+	padding-top: 75px;
 	width: 100%;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-  transition: opacity 0.4s ease-in-out;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  transition: opacity background 0.9s ease-in-out;
   clip-path: inset(0 0 0 0 round 10px);
 }
 
@@ -604,16 +606,17 @@ section {
 	display: block;
   z-index: 0;
   transition: transform 0.4s ease-in-out;
-  clip-path: inset(0px 0px 1px 0px); 
+  clip-path: inset(0px 0px 2px 0px); 
 }
 
 .officer-card:hover .headShot{
-  transform: scale(1.15) translateY(-21px);
+  transform: scale(1.15) translateY(-19px);
   overflow: visible;
 }
 
-.officer-card:hover {
+.officer-card:hover .officer-info{
   z-index: 10;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
 }
 
 .officer-card:hover .officer-name,
@@ -632,6 +635,39 @@ section {
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
 	backdrop-filter: blur(6px);
 	pointer-events: none;
+}
+
+@media (max-width: 800px) {/* Officer Page Responsive */
+  body {
+    overflow-x: hidden; 
+  }
+
+  #leads-component,
+  #deptHeads-component,
+  #committeeHeads-component {
+    overflow-x: hidden; 
+  }
+
+  #leads-cards,
+  #deptHeads-cards,
+  #committeeHeads-cards {
+    display: flex !important;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 27px 20px 10px 20px; 
+    width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--white) transparent;
+  }
+
+  .officer-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    min-width: 250px;
+  }
 }
 
 /* ABOUT // DRAFT ONLY YET */
