@@ -518,7 +518,7 @@ section {
 #leads-component,
 #deptHeads-component,
 #committeeHeads-component {
-	margin-top: 70px;
+	margin-top: 75px;
 }
 
 .leads-heading,
@@ -556,7 +556,7 @@ section {
 /* Officer Card */
 .officer-card {
 	position: relative;
-	z-index: 1;
+  z-index: 0;
 	width: 250px;
 	border: 1px var(--officerBorderColor) solid;
 	border-radius: 10px;
@@ -602,13 +602,18 @@ section {
 .headShot {
 	width: 100%;
 	display: block;
+  z-index: 0;
   transition: transform 0.4s ease-in-out;
+  clip-path: inset(0px 0px 1px 0px); 
 }
 
 .officer-card:hover .headShot{
   transform: scale(1.15) translateY(-21px);
-  position: relative;
   overflow: visible;
+}
+
+.officer-card:hover {
+  z-index: 10;
 }
 
 .officer-card:hover .officer-name,
