@@ -1,34 +1,64 @@
 {
   "departmentHeads":[
     {
-      "Name": "Yldevier Magpusao",
-      "Position": "Cloud Captain",
-      "Description": "mahilig magmahal"
+      "Name": "Senoy, Kyle",
+      "Position": "Networking Head",
+      "Description": "kaon para dili mabrader"
     },
     {
-      "Name": "Breindel Medina",
-      "Position": "Department Lead",
+      "Name": "Lo Priego, Carlos Don",
+      "Position": "Networking Co-Head",
       "Description": "mahilig magpakaboboo"
     },
     {
-      "Name": "Ed Ian Jay Baguio",
-      "Position": "Committee Lead",
-      "Description": "spiderman"
+      "Name": "Natividad, Deniel Dave",
+      "Position": "Cloud Computing Head",
+      "Description": "quote? kanang di ko lamigon"
     },
     {
-      "Name": "Yldevier Magpusao",
-      "Position": "Cloud Captain",
-      "Description": "mahilig magmahal"
+      "Name": "Morgia, Maron",
+      "Position": "Cloud Computing Co-Head",
+      "Description": "Cris himoi ko quote"
     },
     {
-      "Name": "Breindel Medina",
-      "Position": "Department Lead",
-      "Description": "mahilig magpakaboboo"
+      "Name": "Albinda, Alex Neal",
+      "Position": "Data Analytics Head",
+      "Description": "Ang haba hehe"
     },
     {
-      "Name": "Ed Ian Jay Baguio",
-      "Position": "Committee Lead",
-      "Description": "spiderman"
+      "Name": "Bihag, Raphael",
+      "Position": "Data Analytics Co-Head",
+      "Description": "wala koy quote mabutang grahh"
+    },
+    {
+      "Name": "Peña, Mark Jaily",
+      "Position": "Machine Learning Head",
+      "Description": "Give me a random quote for our officers' posting"
+    },
+    {
+      "Name": "Lambayao, Liarrah Daniya",
+      "Position": "Machine Learning Co-Head",
+      "Description": "Sure! Here is a quote for you: 'The best way to predict the future is to create it.' - Peter Drucker"
+    },
+    {
+      "Name": "Jomuad, Precious Mae",
+      "Position": "Security Head",
+      "Description": "Dito mo yan gawin sa Nabunturan! - Francis Nabunturan"
+    },
+    {
+      "Name": "Taclindo, Borgy Lance",
+      "Position": "Security Co-Head",
+      "Description": "You are bound by nothing"
+    },
+    {
+      "Name": "Veloso, Justin Dominic",
+      "Position": "Software & Web Development Head",
+      "Description": "If you don't take risks, you can't create a future"
+    },
+    {
+      "Name": "Medina, Breindel",
+      "Position": "Software & Web Development Co-Head",
+      "Description": "Kaya ako di natutulog, binabantayan ko lang sarili ko"
     }
   ]
 }

@@ -1,34 +1,54 @@
 {
   "committeeHeads":[
     {
-      "Name": "Yldevier Magpusao",
-      "Position": "Cloud Captain",
-      "Description": "mahilig magmahal"
+      "Name": "Charisse, Lorejo",
+      "Position": "Creatives Head",
+      "Description": "Abi nakog mangga ray aslomn, imong ilok pod diay."
     },
     {
-      "Name": "Breindel Medina",
-      "Position": "Department Lead",
-      "Description": "mahilig magpakaboboo"
+      "Name": "Minguez, Errol James",
+      "Position": "Creatives Co-Head",
+      "Description": "akoa nasad??"
     },
     {
-      "Name": "Ed Ian Jay Baguio",
-      "Position": "Committee Lead",
-      "Description": "spiderman"
+      "Name": "Ceballos, Cristieneil",
+      "Position": "Logistics & Finance Head",
+      "Description": "kung ang bridge ay tulay, ug ako nalang diay"
     },
     {
-      "Name": "Yldevier Magpusao",
-      "Position": "Cloud Captain",
-      "Description": "mahilig magmahal"
+      "Name": "Arranguez, Francis Reid",
+      "Position": "Logistics & Finance Co-Head",
+      "Description": "Dito mo yan gawin sa Nabunturan!"
     },
     {
-      "Name": "Breindel Medina",
-      "Position": "Department Lead",
-      "Description": "mahilig magpakaboboo"
+      "Name": "Dongon, Karlo Louis",
+      "Position": "Promotions Head",
+      "Description": "\"Kaon na Bogartz\" - akong Mama"
     },
     {
-      "Name": "Ed Ian Jay Baguio",
-      "Position": "Committee Lead",
-      "Description": "spiderman"
+      "Name": "Royo, Dave Christian",
+      "Position": "Promotions Co-Head",
+      "Description": "Te pabili nga po c2 yung kulay red"
+    },
+    {
+      "Name": "Organiza, Trixie Nicole",
+      "Position": "Operations Head",
+      "Description": "Pwede nani?"
+    },
+    {
+      "Name": "Gazo, Maxwell Dave",
+      "Position": "Operations Co-Head",
+      "Description": "\"okay na 'to\" - Lebron James"
+    },
+    {
+      "Name": "Siapuatco, Aaron Dave",
+      "Position": "Relations Head",
+      "Description": "It is what is it"
+    },
+    {
+      "Name": "Masong, Angela Kim",
+      "Position": "Relations Co-Head",
+      "Description": "Life is not about waiting for the storm to pass, it's about learning to dance in the rain"
     }
   ]
 }
