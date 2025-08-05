@@ -10,6 +10,7 @@ const deptHeadsContainer = document.getElementById("deptHeads-cards");
 const committeeHeadsContainer = document.getElementById("committeeHeads-cards");
 
 initiateNavBar();
+
 renderLeads(leadsContainer);
 renderDepartmentHeads(deptHeadsContainer);
 renderCommitteeHeads(committeeHeadsContainer);

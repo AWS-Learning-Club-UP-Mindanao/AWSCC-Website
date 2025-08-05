@@ -561,7 +561,8 @@ section {
 	border: 1px var(--officerBorderColor) solid;
 	border-radius: 10px;
 	background-color: var(--officerBgColor);
-	overflow: hidden;
+	overflow: visible;
+  transition: transform 0.3s ease-in-out;
 }
 
 .officer-info {
@@ -571,12 +572,15 @@ section {
 	padding-bottom: 10px;
 	width: 100%;
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  transition: opacity 0.4s ease-in-out;
+  clip-path: inset(0 0 0 0 round 10px);
 }
 
 .officer-name {
 	color: #e5e5e5;
 	font-family: "Amazon Ember", sans-serif;
 	font-size: 16px;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .officer-position {
@@ -584,6 +588,7 @@ section {
 	font-weight: 10;
 	font-family: "Amazon Ember Display", sans-serif;
 	font-size: 14px;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .officer-desc {
@@ -591,11 +596,25 @@ section {
 	padding-top: 6px;
 	font-family: "Amazon Ember Display", sans-serif;
 	font-size: 12px;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .headShot {
 	width: 100%;
 	display: block;
+  transition: transform 0.4s ease-in-out;
+}
+
+.officer-card:hover .headShot{
+  transform: scale(1.15) translateY(-21px);
+  position: relative;
+  overflow: visible;
+}
+
+.officer-card:hover .officer-name,
+.officer-card:hover .officer-position,
+.officer-card:hover .officer-desc {
+	opacity: 0;
 }
 
 .headShot::after {
