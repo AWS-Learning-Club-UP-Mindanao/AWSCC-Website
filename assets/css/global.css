@@ -52,9 +52,9 @@ body {
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, #0f0b26 0%, #1e003d 70%);
-  height: 300vh; /* Test height to show scroll animation */
+  height: 100%;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: clip;
   position: relative;
 }
 
