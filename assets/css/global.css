@@ -434,6 +434,7 @@ section.hero {
     transparent
   ); /* Adjust direction and stop points for desired feathering */
   mask-image: linear-gradient(to bottom, black 15%, black 80%, transparent);
+  z-index: 2;
 }
 
 .hero-gradient {
