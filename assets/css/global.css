@@ -54,9 +54,7 @@ body {
   background: linear-gradient(180deg, #0f0b26 0%, #1e003d 70%);
   height: 300vh; /* Test height to show scroll animation */
   width: 100vw;
-  width: 100vw;
   overflow-x: hidden;
-  position: relative;
   position: relative;
 }
 
