@@ -204,6 +204,9 @@ section {
 	flex-direction: column;
 	align-items: center;
 	gap: 0px;
+}
+
+.navbar-logo-text-wrapper.scrolled {
 	pointer-events: auto;
 	cursor: pointer;
 }
