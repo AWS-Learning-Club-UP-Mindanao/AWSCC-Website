@@ -51,7 +51,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	background: linear-gradient(180deg, #0F0B26 0%, #1E003D 70%);
-	height: 300vh; /* Test height to show scroll animation */
+	height: 400vh; /* Test height to show scroll animation */
 	overflow-x: hidden;
 }
 
@@ -534,7 +534,7 @@ section {
 #leads-component,
 #deptHeads-component,
 #committeeHeads-component {
-	margin-top: 70px;
+	margin-top: 75px;
 }
 
 .leads-heading,
@@ -572,27 +572,34 @@ section {
 /* Officer Card */
 .officer-card {
 	position: relative;
-	z-index: 1;
-	width: 250px;
+  z-index: 0;
+	width: 300px;
+  height: 374px;
 	border: 1px var(--officerBorderColor) solid;
 	border-radius: 10px;
 	background-color: var(--officerBgColor);
-	overflow: hidden;
+	overflow: visible;
+  transition: transform 0.3s ease-in-out;
 }
 
 .officer-info {
 	position: absolute;
 	bottom: 0;
+  height: 160px;
 	padding-left: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
+	padding-top: 75px;
 	width: 100%;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  transition: opacity background 0.9s ease-in-out;
+  clip-path: inset(0 0 0 0 round 10px);
 }
 
 .officer-name {
 	color: #e5e5e5;
 	font-family: "Amazon Ember", sans-serif;
 	font-size: 16px;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .officer-position {
@@ -600,18 +607,41 @@ section {
 	font-weight: 10;
 	font-family: "Amazon Ember Display", sans-serif;
 	font-size: 14px;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .officer-desc {
 	color: #e5e5e5;
-	padding-top: 6px;
+	padding-top: 3px;
+  padding-right: 10px;
 	font-family: "Amazon Ember Display", sans-serif;
 	font-size: 12px;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .headShot {
 	width: 100%;
+  height: 100%;
 	display: block;
+  z-index: 0;
+  transition: transform 0.4s ease-in-out;
+  clip-path: inset(0px 0px 2px 0px); 
+}
+
+.officer-card:hover .headShot{
+  transform: scale(1.15) translateY(-23px);
+  overflow: visible;
+}
+
+.officer-card:hover .officer-info{
+  z-index: 10;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+
+.officer-card:hover .officer-name,
+.officer-card:hover .officer-position,
+.officer-card:hover .officer-desc {
+	opacity: 0;
 }
 
 .headShot::after {
@@ -626,7 +656,55 @@ section {
 	pointer-events: none;
 }
 
-/* ABOUT PAGE */
+@media (min-width: 200px) and (max-width: 1220px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%; 
+    height: 130vh;
+  }
+
+  .officers-description {  /* para mag-shrink yung text sa mobile */
+    overflow-wrap: break-word;
+    padding: 0 16px; 
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #leads-component,
+  #deptHeads-component,
+  #committeeHeads-component {
+    overflow-x: hidden;
+    margin-top: 75px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  #leads-cards,
+  #deptHeads-cards,
+  #committeeHeads-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 27px 20px 10px 20px;
+    width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--white) transparent;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  .officer-card {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    box-sizing: border-box;
+  }
+}
+
+/* ABOUT // DRAFT ONLY YET */
 .firstDiv {
   display: flex;
   flex-direction: column;

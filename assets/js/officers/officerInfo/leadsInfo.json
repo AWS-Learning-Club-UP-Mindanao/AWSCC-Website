@@ -1,19 +1,22 @@
 {
-  "Leads":[
-    {
-      "Name": "Magpusao, Yldevier John",
-      "Position": "Cloud Captain",
-      "Description": "mahilig magmahal"
-    },
+  "Leads": [
     {
       "Name": "Medina, Breindel",
       "Position": "Department Lead",
-      "Description": "mahilig magpakaboboo"
+      "Description": "Kaya ako di natutulog, binabantayan ko lang sarili ko",
+      "Image": "deptLead.png"
+    },
+    {
+      "Name": "Magpusao, Yldevier John",
+      "Position": "Cloud Captain",
+      "Description": "Tagnaa ninyo kung aans pa ba o alaws na. Pero 5g lang goods na.",
+      "Image": "cloudCaptain.png"
     },
     {
       "Name": "Baguio, Ed Ian Jay",
       "Position": "Committee Lead",
-      "Description": "spiderman"
+      "Description": "Okey na 'to..... okay na to level up the game and skills rorrr",
+      "Image": "committeeLead.png"
     }
   ]
 }
