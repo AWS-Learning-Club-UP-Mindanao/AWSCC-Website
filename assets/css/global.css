@@ -19,17 +19,17 @@ html {
 @font-face {
   font-family: "Amazon Ember";
   src: url("../fonts/AmazonEmber_Bd.ttf") format("truetype");
-	font-weight: 600;
+  font-weight: 600;
 }
 
 @font-face {
-	font-family: "Geist Bold";
-	src: url("../fonts/Geist-Bold.ttf") format("truetype");
+  font-family: "Geist Bold";
+  src: url("../fonts/Geist-Bold.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: "Geist ExtraBold";
-	src: url("../fonts/Geist-ExtraBold.ttf") format("truetype");
+  font-family: "Geist ExtraBold";
+  src: url("../fonts/Geist-ExtraBold.ttf") format("truetype");
 }
 
 /* Variables */
@@ -48,42 +48,42 @@ html {
 
 /* Global/Reusable CSS */
 body {
-	display: flex;
-	flex-direction: column;
-	background: linear-gradient(180deg, #0F0B26 0%, #1E003D 70%);
-	height: 300vh; /* Test height to show scroll animation */
-	overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #0f0b26 0%, #1e003d 70%);
+  height: 300vh; /* Test height to show scroll animation */
+  overflow-x: hidden;
 }
 
 main {
-	flex: 1;
+  flex: 1;
 }
 
 section {
-	display: flex;
-	height: 100vh;
-	width: 100vw;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 
 .gradient-text {
-	background: linear-gradient(
-		135.066deg,
-		#ffffff 18%,
-		#bbaffd 47%,
-		#efdcf1 110%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent !important;
+  background: linear-gradient(
+    135.066deg,
+    #ffffff 18%,
+    #bbaffd 47%,
+    #efdcf1 110%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
 }
 
 /* Reusable for Navbar Div */
 #navbar-component {
-	min-height: 100px;
-	z-index: 1000;
+  min-height: 100px;
+  z-index: 1000;
 }
 
 #navbar-component.main {
-	min-height: 0;
+  min-height: 0;
 }
 
 /* Reusable Heading CSS */
@@ -96,37 +96,37 @@ section {
 
 /* Navbar Container */
 .navbar-container {
-	z-index: 1000;
-	display: flex;
-	flex-direction: column;
-	position: fixed;
-	justify-content: center;
-	align-items: center;
-	width: 100vw;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
 }
 
 /* Navbar Wrapper */
 .navbar-wrapper {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	width: 100vw;
-	height: 70px;
-	padding: 30px 0 20px 0;
-	box-shadow: 0 5px 30px rgba(0, 0, 0, 0);
-	transform: scale(1, 0.9);
-	transition: backdrop-filter 0.5s, background 1.4s, transform 1s,
-		box-shadow 0.5s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 70px;
+  padding: 30px 0 20px 0;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0);
+  transform: scale(1, 0.9);
+  transition: backdrop-filter 0.5s, background 1.4s, transform 1s,
+    box-shadow 0.5s;
 }
 
 .navbar-blurred {
-	background: rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(15px);
-	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
-	transform: scale(1);
-	transition: backdrop-filter 0.5s, background 1s, transform 0.4s,
-		box-shadow 0.5s;
-	transition-delay: 0.6s;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  transition: backdrop-filter 0.5s, background 1s, transform 0.4s,
+    box-shadow 0.5s;
+  transition-delay: 0.6s;
 }
 
 /* Navbar */
@@ -173,42 +173,42 @@ section {
 
 /* Navbar Logo */
 .navbar-logo-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: absolute;
-	top: 70px;
-	pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  pointer-events: none;
 }
 
 .navbar-logo {
-	position: relative;
-	height: 135px;
-	width: 135px;
-	transition: transform 1s, margin 1s, height 1s, width 1s;
-	margin: 80px 0 20px 0;
-	z-index: 2;
+  position: relative;
+  height: 135px;
+  width: 135px;
+  transition: transform 1s, margin 1s, height 1s, width 1s;
+  margin: 80px 0 20px 0;
+  z-index: 2;
 }
 
 .navbar-logo.scrolled {
   height: 40px;
   width: 40px;
   transform: translate(calc(var(--leftmost) + 3rem), var(--logoToNav));
-	transition: transform 1s, margin 1s, height 1s, width 1s;
-	pointer-events: auto;
-	cursor: pointer;
+  transition: transform 1s, margin 1s, height 1s, width 1s;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .navbar-logo-text-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
 }
 
 .navbar-logo-text-wrapper.scrolled {
-	pointer-events: auto;
-	cursor: pointer;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .navbar-logo-text {
@@ -218,37 +218,37 @@ section {
   text-align: center;
   -webkit-text-fill-color: var(--white);
   z-index: 2;
-	width: fit-content;
+  width: fit-content;
 }
 
 .navbar-logo-text.top {
   font-family: "Geist ExtraBold", sans-serif;
-	font-size: 52px;
-	transition: transform 0.8s, font-size 0.8s, -webkit-text-fill-color 2.8s;
+  font-size: 52px;
+  transition: transform 0.8s, font-size 0.8s, -webkit-text-fill-color 2.8s;
 }
 
 .navbar-logo-text.bottom {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-family: "Amazon Ember", sans-serif;
-	white-space: nowrap;
-	font-size: 30px;
-	transition: transform 0.8s, font-size 0.8s;
+  white-space: nowrap;
+  font-size: 30px;
+  transition: transform 0.8s, font-size 0.8s;
 }
 
 .navbar-logo-text.bottom::before {
-	right: 105%;
+  right: 105%;
 }
 
 .navbar-logo-text.bottom::after {
-	left: 105%;
+  left: 105%;
 }
 
 .navbar-logo-text.bottom::before,
 .navbar-logo-text.bottom::after {
   display: inline-block;
-	position: absolute;
+  position: absolute;
   content: "";
   height: 1px;
   width: 30px;
@@ -271,13 +271,13 @@ section {
 }
 
 .navbar-logo-text.scrolled.bottom {
-	transform: translate(
-		calc(var(--leftmost) + 8rem - 0.8rem),
-		var(--logoTextToNav)
-	);
-	font-size: 12px;
+  transform: translate(
+    calc(var(--leftmost) + 8rem - 0.8rem),
+    var(--logoTextToNav)
+  );
+  font-size: 12px;
   margin-left: 5px;
-	transition: transform 1.2s, font-size 1.2s;
+  transition: transform 1.2s, font-size 1.2s;
 }
 
 /* Dropdown Button */
@@ -293,8 +293,8 @@ section {
 }
 
 .navbar-dropdown-button > img {
-	height: 18px;
-	width: 18px;
+  height: 18px;
+  width: 18px;
 }
 
 /* Dropdown Header */
@@ -344,41 +344,41 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-	.navbar-logo {
-		margin: 40px 0 40px 0;
-	}
+  .navbar-logo {
+    margin: 40px 0 40px 0;
+  }
 
-	.navbar-logo.scrolled {
-		margin: 80px 0 20px 0;
-	}
+  .navbar-logo.scrolled {
+    margin: 80px 0 20px 0;
+  }
 
-	.navbar-logo-text-wrapper {
-		gap: 15px;
-		transition: gap 0.5s;
-	}
+  .navbar-logo-text-wrapper {
+    gap: 15px;
+    transition: gap 0.5s;
+  }
 
-	.navbar-logo-text-wrapper.scrolled {
-		gap: 0px;
-		transition: gap 0.5s;
-	}
+  .navbar-logo-text-wrapper.scrolled {
+    gap: 0px;
+    transition: gap 0.5s;
+  }
 
-	.navbar-logo-text.top {
-		font-size: 54px;
-		line-height: 1;
-	}
+  .navbar-logo-text.top {
+    font-size: 54px;
+    line-height: 1;
+  }
 
-	.navbar-logo-text.bottom {
-		font-size: 24px;
-	}
+  .navbar-logo-text.bottom {
+    font-size: 24px;
+  }
 
-	.navbar-logo-text.bottom::before,
-	.navbar-logo-text.bottom::after {
-		display: none;
-	}
-	
-	.navbar-dropdown-button {
-		display: block;
-	}
+  .navbar-logo-text.bottom::before,
+  .navbar-logo-text.bottom::after {
+    display: none;
+  }
+
+  .navbar-dropdown-button {
+    display: block;
+  }
 
   .navbar-wrapper {
     position: relative;
@@ -421,105 +421,99 @@ section {
 
 /* Hero Section */
 .hero {
-	display: flex;
-	justify-content: center;
-	-webkit-mask-image: linear-gradient(
-		to bottom,
-		black 15%,
-		black 80%,
-		transparent
-	); /* Adjust direction and stop points for desired feathering */
-	mask-image: linear-gradient(
-		to bottom,
-		black 15%,
-		black 80%,
-		transparent
-	);
+  display: flex;
+  justify-content: center;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 15%,
+    black 80%,
+    transparent
+  ); /* Adjust direction and stop points for desired feathering */
+  mask-image: linear-gradient(to bottom, black 15%, black 80%, transparent);
 }
 
 .hero-gradient {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	align-self: center;
-	transform: scale(2.3, 2.5) rotate(-5deg) translate(-8%, -4%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  transform: scale(2.3, 2.5) rotate(-5deg) translate(-8%, -4%);
 }
 
 .hero-buttons {
-	display: flex;
-	height: fit-content;
-	margin-top: 68vh;
-	gap: 20px;
-	align-items: center;
-	transition: margin 1s;
+  display: flex;
+  height: fit-content;
+  margin-top: 68vh;
+  gap: 20px;
+  align-items: center;
+  transition: margin 1s;
 }
 
 .hero-buttons > button {
-	display: flex;
-	width: fit-content;
-	text-align: center;
-	font-family: "Geist Bold";
-	font-size: 14px;
-	padding: 10px 30px;
-	border-radius: 5px;
-	color: var(--white);
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(28px);
-	border: solid 1px rgba(255, 255, 255, 0.5);
-	cursor: pointer;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
-	transition: transform 0.5s;
-	z-index: 2;
+  display: flex;
+  width: fit-content;
+  text-align: center;
+  font-family: "Geist Bold";
+  font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28px);
+  border: solid 1px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.5s;
+  z-index: 2;
 }
 
 .hero-buttons > button:hover {
-	transform: scale(1.05);
-	transition: transform 0.5s;
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 
 .hero-buttons > button > img {
-	height: 18px;
-	width: 18px;
+  height: 18px;
+  width: 18px;
 }
 
 .hero-clouds {
-	display: flex;
-	position: absolute;
-	height: fit-content;
-	width: 165vw;
-	justify-content: space-between;
-	top: 50%;
-	pointer-events: none;
+  display: flex;
+  position: absolute;
+  height: fit-content;
+  width: 165vw;
+  justify-content: space-between;
+  top: 50%;
+  pointer-events: none;
 }
 
 .hero-clouds > img {
-	width: 45%;
+  width: 45%;
 }
 
 @media screen and (max-width: 768px) {
+  .hero-gradient {
+    transform: scale(3.1, 3.3) rotate(-0deg) translate(-4.5%, 1.5%);
+  }
 
-	.hero-gradient {
-		transform: scale(3.1, 3.3) rotate(-0deg) translate(-4.5%, 1.5%);
-	}
+  .hero-buttons {
+    flex-direction: column;
+    margin-top: 75vh;
+    transition: margin 1s;
+  }
 
-	.hero-buttons {
-		flex-direction: column;
-		margin-top: 75vh;
-		transition: margin 1s;
-	}
-
-	.hero-clouds {
-		display: none;
-	}
+  .hero-clouds {
+    display: none;
+  }
 }
 
 .centerDiv {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Leads Section */
@@ -534,7 +528,7 @@ section {
 #leads-component,
 #deptHeads-component,
 #committeeHeads-component {
-	margin-top: 70px;
+  margin-top: 70px;
 }
 
 .leads-heading,
@@ -571,59 +565,59 @@ section {
 
 /* Officer Card */
 .officer-card {
-	position: relative;
-	z-index: 1;
-	width: 250px;
-	border: 1px var(--officerBorderColor) solid;
-	border-radius: 10px;
-	background-color: var(--officerBgColor);
-	overflow: hidden;
+  position: relative;
+  z-index: 1;
+  width: 250px;
+  border: 1px var(--officerBorderColor) solid;
+  border-radius: 10px;
+  background-color: var(--officerBgColor);
+  overflow: hidden;
 }
 
 .officer-info {
-	position: absolute;
-	bottom: 0;
-	padding-left: 10px;
-	padding-bottom: 10px;
-	width: 100%;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 }
 
 .officer-name {
-	color: #e5e5e5;
-	font-family: "Amazon Ember", sans-serif;
-	font-size: 16px;
+  color: #e5e5e5;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 16px;
 }
 
 .officer-position {
-	color: #e5e5e5;
-	font-weight: 10;
-	font-family: "Amazon Ember Display", sans-serif;
-	font-size: 14px;
+  color: #e5e5e5;
+  font-weight: 10;
+  font-family: "Amazon Ember Display", sans-serif;
+  font-size: 14px;
 }
 
 .officer-desc {
-	color: #e5e5e5;
-	padding-top: 6px;
-	font-family: "Amazon Ember Display", sans-serif;
-	font-size: 12px;
+  color: #e5e5e5;
+  padding-top: 6px;
+  font-family: "Amazon Ember Display", sans-serif;
+  font-size: 12px;
 }
 
 .headShot {
-	width: 100%;
-	display: block;
+  width: 100%;
+  display: block;
 }
 
 .headShot::after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 50%; /* adjust height of overlay */
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-	backdrop-filter: blur(6px);
-	pointer-events: none;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* adjust height of overlay */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
 }
 
 /* ABOUT PAGE */
@@ -638,8 +632,8 @@ section {
 #about-text {
   text-align: center;
   width: 100%;
-  max-width: 700px; 
-  padding: 0 15px;  
+  max-width: 700px;
+  padding: 0 15px;
 }
 
 .club-logo {
@@ -783,7 +777,6 @@ section {
     white-space: nowrap;
   }
 }
-
 
 /* Events CSS */
 .events-section {
@@ -1034,19 +1027,19 @@ section {
     width: 340px;
     height: 340px;
   }
-  
+
   .upcoming-events-cards {
     max-width: calc(3 * 300px + 2 * 20px + 40px);
   }
-  
+
   .event-title {
     font-size: 0.95rem;
   }
-  
+
   .event-description {
     font-size: 0.75rem;
   }
-  
+
   .event-tag {
     font-size: 0.7rem;
   }
@@ -1062,19 +1055,19 @@ section {
     width: 300px;
     height: 300px;
   }
-  
+
   .upcoming-events-cards {
     max-width: calc(3 * 200px + 2 * 20px + 40px);
   }
-  
+
   .event-title {
     font-size: 0.9rem;
   }
-  
+
   .event-description {
     font-size: 0.7rem;
   }
-  
+
   .event-tag {
     font-size: 0.65rem;
   }
@@ -1090,20 +1083,20 @@ section {
     width: 260px;
     height: 260px;
   }
-  
+
   .upcoming-events-cards {
     max-width: calc(3 * 200px + 2 * 20px + 40px);
     gap: 15px;
   }
-  
+
   .event-title {
     font-size: 0.85rem;
   }
-  
+
   .event-description {
     font-size: 0.65rem;
   }
-  
+
   .event-tag {
     font-size: 0.6rem;
   }
@@ -1123,14 +1116,12 @@ section {
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: auto;
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem 2rem 4rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-  padding-bottom: 2rem;
+  gap: 4rem;
 }
 
 .footer-section h3,
@@ -1216,10 +1207,12 @@ section {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 1rem;
-  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 4rem 0 4rem;
+  text-align: left;
   font-family: "Amazon Ember Display", sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-bottom p {
@@ -1237,6 +1230,7 @@ section {
   .footer-container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 0 1rem 2rem 1rem;
   }
 
   .footer-logo {
@@ -1264,6 +1258,10 @@ section {
     display: none;
   }
 
+  .footer-bottom {
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+  }
   .footer-links ul {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -1289,6 +1287,34 @@ section {
 @media (min-width: 1024px) {
   .footer-container {
     grid-template-columns: 2fr 1fr;
+    padding: 0 6rem 2rem 6rem;
+    gap: 6rem;
+  }
+
+  .footer-bottom {
+    padding: 1rem 6rem 0 6rem;
+  }
+
+  .footer-links {
+    justify-self: end;
+    text-align: left;
+  }
+
+  .footer-links ul {
+    max-width: none;
+    width: 100%;
+    justify-content: end;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer-container {
+    padding: 0 8rem 2rem 8rem;
+    gap: 8rem;
+  }
+
+  .footer-bottom {
+    padding: 1rem 8rem 0 8rem;
   }
 }
 
