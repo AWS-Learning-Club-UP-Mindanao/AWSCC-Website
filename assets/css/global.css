@@ -689,7 +689,7 @@ section.hero {
 
   .why-us-cards {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 40px;
   }
 
   .why-us-header h2 {
