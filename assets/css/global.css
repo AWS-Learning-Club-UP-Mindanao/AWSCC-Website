@@ -218,15 +218,15 @@ section.hero {
 }
 
 .navbar-logo-text-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
 }
 
 .navbar-logo-text-wrapper.scrolled {
-	pointer-events: auto;
-	cursor: pointer;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .navbar-logo-text-wrapper.scrolled {
@@ -447,7 +447,6 @@ section.hero {
   display: flex;
   justify-content: center;
   position: relative;
-  position: relative;
   -webkit-mask-image: linear-gradient(
     to bottom,
     black 15%,
@@ -515,11 +514,8 @@ section.hero {
   position: absolute;
   height: fit-content;
   width: 165%;
-  width: 165%;
   justify-content: space-between;
   top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
   left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
