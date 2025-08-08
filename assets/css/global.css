@@ -1581,6 +1581,298 @@ section.hero {
   }
 }
 
+/* Style taken from Why Us Section*/
+
+.content-gradient {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(3.5, 3.8);
+  z-index: 1;
+  opacity: 0.3;
+  pointer-events: none;
+  pointer-events: none;
+}
+
+/* Club Highlights Section */
+.club-highlights {
+  position: relative;
+  padding: 80px 40px;
+  min-height: 100vh;
+  color: white;
+  font-family: "Amazon Ember Display", sans-serif;
+}
+
+.club-highlights-content {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.club-highlights-content p {
+  font-family: "Amazon Ember Display", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.club-highlights-content h2 {
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 5rem;
+  margin-bottom: 32px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff 20%, #bbaffd 50%, #efdcf1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.highlights-cards {
+  display: grid;
+  grid-template-columns: 5.5fr 1.8fr;
+  gap: 40px;
+  align-items: start;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.highlight-card {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 0;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  overflow: hidden;
+  width: 100%;
+}
+
+.highlight-card:first-child {
+  min-height: 540px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+.highlight-image {
+  width: 100%;
+  height: 540px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.highlight-card h3 {
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.highlight-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+/* Stats cards on the right */
+.highlights-cards .highlight-card:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  backdrop-filter: none;
+  height: 540px;
+}
+
+.stat-card {
+  background: rgba(139, 92, 246, 0.25);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  border-radius: 12px;
+  padding: 40px 25px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 170px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  background: rgba(139, 92, 246, 0.35);
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 15px 35px rgba(139, 92, 246, 0.2);
+}
+
+.stat-card h4 {
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 0.85rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
+
+.stat-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.stat-number img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.9;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.stat-number span {
+  font-family: "Geist ExtraBold", sans-serif;
+  font-size: 3rem;
+  background: linear-gradient(135deg, #ffffff 20%, #bbaffd 50%, #efdcf1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .highlights-cards {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 700px;
+  }
+  
+  .club-highlights h2 {
+    font-size: 3.5rem;
+  }
+  
+  .club-highlights > p {
+    margin-bottom: 80px;
+  }
+  
+  .highlight-card:first-child {
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+  }
+  
+  .highlight-image {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    flex: 1;
+  }
+  
+  .highlights-cards .highlight-card:last-child {
+    flex-direction: row;
+    gap: 25px;
+    padding: 0;
+    height: 400px;
+  }
+  
+  .stat-card {
+    min-height: 130px;
+    padding: 30px 20px;
+  }
+  
+  .stat-number img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .stat-number span {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .club-highlights {
+    padding: 60px 20px;
+  }
+  
+  .club-highlights h2 {
+    font-size: 3rem;
+  }
+  
+  .club-highlights > p {
+    font-size: 1rem;
+    margin-bottom: 80px;
+  }
+  
+  .highlight-card:first-child {
+    min-height: 320px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+  }
+  
+  .highlight-image {
+    width: 100%;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    flex: 1;
+  }
+  
+  .highlights-cards .highlight-card:last-child {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    height: 320px;
+  }
+  
+  .stat-card {
+    padding: 25px 20px;
+    min-height: 90px;
+  }
+  
+  .stat-card h4 {
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+  }
+  
+  .stat-number img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .stat-number span {
+    font-size: 2.2rem;
+  }
+}
+
 /* Leads Section */
 #leads-cards {
   margin-top: 30px;
