@@ -7,10 +7,12 @@ This site aims to showcase our club, its initiatives, events, blogs, and learnin
 
 - 🔗 [Live Site (Main)](https://awsccupmindanao.org)  
 - 🔗 [Workshop Materials (Subdomain)](https://workshops.awsccupmindanao.org)
+- 🔗 [Blogs (Subdomain)](https://blogs.awsccupmindanao.org)
 
 The site is composed of two parts:
 - **Main Website**: A static HTML/CSS/JS site
 - **Workshops Section**: A separate [Jekyll](https://jekyllrb.com/) site hosted on a subdomain
+- **Blogs Section**: A separate [Jekyll](https://jekyllrb.com/) site hosted on a subdomain
 
 ---
 
