@@ -578,6 +578,7 @@ section.hero {
 .why-us-content {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
   position: relative;
   z-index: 3;
 }
@@ -674,7 +675,7 @@ section.hero {
 @media (max-width: 1024px) {
   .why-us-cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 20px;
   }
 
   .why-us-header h2 {
@@ -689,7 +690,7 @@ section.hero {
 
   .why-us-cards {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
   }
 
   .why-us-header h2 {
