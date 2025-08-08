@@ -583,24 +583,20 @@ section.hero {
 }
 
 .grid-last-card {
-  top: 40vh;
+  top: 35vh;
   right: -5%;
   transform: translateY(-50%);
 }
 
 @media (max-width: 1024px) {
-  .grid-first-card {
-    top: 65vh;
-    left: 10%;
-  }
-  .grid-last-card {
-    top: 85vh;
+  .grid-dots {
+    display: none;
   }
 }
 
 @media (min-height: 901px) {
   .grid-first-card {
-    top: 70vh;
+    top: 80vh;
   }
 
   .grid-last-card {
