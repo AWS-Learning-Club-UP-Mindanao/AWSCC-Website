@@ -953,7 +953,7 @@ section.hero {
 }
 
 .statements {
-  margin-top: 60px;
+  margin: 60px 10px;
   color: white;
   font-family: "Amazon Ember Display", sans-serif;
   display: flex;
