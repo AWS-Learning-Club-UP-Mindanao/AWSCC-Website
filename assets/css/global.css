@@ -202,7 +202,13 @@ section {
 .navbar-logo-text-wrapper {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 0px;
+}
+
+.navbar-logo-text-wrapper.scrolled {
+	pointer-events: auto;
+	cursor: pointer;
 }
 
 .navbar-logo-text {
@@ -212,6 +218,7 @@ section {
   text-align: center;
   -webkit-text-fill-color: var(--white);
   z-index: 2;
+	width: fit-content;
 }
 
 .navbar-logo-text.top {
@@ -221,23 +228,32 @@ section {
 }
 
 .navbar-logo-text.bottom {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
   font-family: "Amazon Ember", sans-serif;
 	white-space: nowrap;
 	font-size: 30px;
 	transition: transform 0.8s, font-size 0.8s;
-	flex-direction: row;
-	align-items: center;
+}
+
+.navbar-logo-text.bottom::before {
+	right: 105%;
+}
+
+.navbar-logo-text.bottom::after {
+	left: 105%;
 }
 
 .navbar-logo-text.bottom::before,
 .navbar-logo-text.bottom::after {
   display: inline-block;
+	position: absolute;
   content: "";
   height: 1px;
   width: 30px;
-  margin: 0 10px 10px 10px;
   background: transparent;
-  transform: scale(0.1);
+  transform: translateX(-50%), scale(0.1);
   transition: background 0.3s, transform 0.5s;
 }
 
