@@ -14,13 +14,13 @@
     },
     {
       "title": "AWSCC Containers Day",
-      "description": "Dive deep into containerization technologies and learn how to deploy, manage, and scale containerized applications using AWS container services.",
+      "description": "Learn practical container management and get hands-on experience with Amazon EKS, ECS, and Fargate. Discover how to simplify deployments and improve efficiency in the cloud!",
       "posterImage": "../assets/img/events/Containers.png",
       "tags": ["Containers", "Docker", "ECS", "EKS"]
     },
     {
       "title": "AWS CCP Certification Workshop",
-      "description": "Prepare for the AWS Certified Cloud Practitioner exam with comprehensive coverage of AWS fundamentals, best practices, and hands-on exercises.",
+      "description": "Join us for an exclusive AWS Certification Training Event and elevate your cloud skills to new heights! Whether you're starting your journey or aiming to certify, Nelson (our fearless eagle) will guide you through the skies of AWS mastery.",
       "posterImage": "../assets/img/events/CertificationWorkshop.png",
       "tags": ["Certification", "AWS CCP", "Cloud Fundamentals"]
     }
