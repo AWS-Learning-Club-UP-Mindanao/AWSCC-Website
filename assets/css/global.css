@@ -218,10 +218,15 @@ section.hero {
 }
 
 .navbar-logo-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0px;
+}
+
+.navbar-logo-text-wrapper.scrolled {
+	pointer-events: auto;
+	cursor: pointer;
 }
 
 .navbar-logo-text-wrapper.scrolled {
