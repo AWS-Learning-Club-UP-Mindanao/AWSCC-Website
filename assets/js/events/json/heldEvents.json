@@ -16,7 +16,7 @@
       "title": "AWSCC Containers Day",
       "description": "Learn practical container management and get hands-on experience with Amazon EKS, ECS, and Fargate. Discover how to simplify deployments and improve efficiency in the cloud!",
       "posterImage": "../assets/img/events/Containers.png",
-      "tags": ["Containers", "Docker", "ECS", "EKS"]
+      "tags": ["Containers", "Fargate", "ECS", "EKS"]
     },
     {
       "title": "AWS CCP Certification Workshop",
