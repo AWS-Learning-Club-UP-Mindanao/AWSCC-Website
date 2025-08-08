@@ -573,18 +573,59 @@ section.hero {
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.3;
+  z-index: 1;
 }
 
 .grid-first-card {
-  bottom: -50px;
-  left: -100px;
-  z-index: 2;
+  top: 80vh;
+  left: -5%;
+  transform: translateY(-50%);
 }
 
 .grid-last-card {
-  bottom: 350px;
-  right: -80px;
-  z-index: 2;
+  top: 40vh;
+  right: -5%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1024px) {
+  .grid-first-card {
+    top: 65vh;
+    left: 10%;
+  }
+  .grid-last-card {
+    top: 85vh;
+  }
+}
+
+@media (min-height: 901px) {
+  .grid-first-card {
+    top: 70vh;
+  }
+
+  .grid-last-card {
+    top: 30vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-first-card {
+    left: -8%;
+  }
+
+  .grid-last-card {
+    right: -8%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .grid-first-card {
+    left: -10%;
+  }
+
+  .grid-last-card {
+    right: -10%;
+  }
 }
 
 .grid-bottom-right {
@@ -695,6 +736,12 @@ section.hero {
     gap: 20px;
   }
 
+  .why-us-card:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 10px);
+    margin: 0 auto;
+  }
+
   .why-us-header h2 {
     font-size: 2.5rem;
   }
@@ -708,6 +755,12 @@ section.hero {
   .why-us-cards {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .why-us-card:nth-child(3) {
+    grid-column: auto;
+    max-width: none;
+    margin: 0;
   }
 
   .why-us-header h2 {
