@@ -835,6 +835,10 @@ section.hero {
   margin-top: 70px;
 }
 
+#committeeHeads-component {
+  margin-bottom: 70px;
+}
+
 .leads-heading,
 .deptHeads-heading,
 .committeeHeads-heading {
@@ -1090,7 +1094,7 @@ section.hero {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px 80px;
+  padding: 40px 80px 100px 80px;
   gap: 30px;
 }
 
