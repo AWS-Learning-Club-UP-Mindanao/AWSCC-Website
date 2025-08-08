@@ -1113,6 +1113,19 @@ section {
   padding: 3rem 1rem 1rem 1rem;
   margin: auto;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4rem;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  width: calc(100% - 8rem);
+  max-width: calc(1400px - 8rem);
 }
 
 .footer-container {
@@ -1212,7 +1225,6 @@ section {
   padding: 1rem 4rem 0 4rem;
   text-align: left;
   font-family: "Amazon Ember Display", sans-serif;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-bottom p {
@@ -1225,6 +1237,10 @@ section {
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 1rem 1rem 1rem;
+  }
+
+  .footer::before {
+    display: none;
   }
 
   .footer-container {
@@ -1261,6 +1277,7 @@ section {
   .footer-bottom {
     padding: 1rem 1rem 0 1rem;
     text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
   .footer-links ul {
     grid-template-columns: 1fr;
@@ -1285,6 +1302,11 @@ section {
 }
 
 @media (min-width: 1024px) {
+  .footer::before {
+    width: calc(100% - 12rem);
+    max-width: calc(1400px - 12rem);
+  }
+
   .footer-container {
     grid-template-columns: 2fr 1fr;
     padding: 0 6rem 2rem 6rem;
@@ -1308,6 +1330,11 @@ section {
 }
 
 @media (min-width: 1440px) {
+  .footer::before {
+    width: calc(100% - 16rem);
+    max-width: calc(1400px - 16rem);
+  }
+
   .footer-container {
     padding: 0 8rem 2rem 8rem;
     gap: 8rem;
