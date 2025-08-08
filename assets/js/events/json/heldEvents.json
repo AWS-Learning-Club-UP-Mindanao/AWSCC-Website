@@ -1,34 +1,28 @@
 {
   "heldEvents": [
     {
-      "title": "Amazon Elastic Compute Cloud: Backbone of AWS",
-      "description": "Learn how to launch, configure, and manage virtual servers with scalable, secure, and reliable applications. This workshop covers everything you need to know about setting up instances, managing storage and deploying applications on AWS's powerful platform.",
-      "posterImage": "../assets/img/events/temp_banner_2.png",
-      "tags": ["EC2", "Cloud Computing", "Infrastructure"]
+      "title": "First Line of Defense: AWS Account Security 101 with IAM",
+      "description": "Learn how to secure your cloud with access control, MFA, key management, and more. Plus, get tips on managing AWS budgets and billing access for total security and financial control.",
+      "posterImage": "../assets/img/events/firstlineofdefense.png",
+      "tags": ["Security", "Cybersecurity", "Defense"]
     },
     {
       "title": "Amazon Elastic Compute Cloud: Backbone of AWS",
-      "description": "Learn how to launch, configure, and manage virtual servers with scalable, secure, and reliable applications. This workshop covers everything you need to know about setting up instances, managing storage and deploying applications on AWS's powerful platform.",
-      "posterImage": "../assets/img/events/temp_banner_2.png",
+      "description": "Learn how to launch, configure, and manage virtual servers in EC2 to build scalable, secure, and reliable application, This workshop covers everything you need to know about setting up instances, managing security, optimizing storage, and deploying application on AWS’s powerful cloud infrastructure.",
+      "posterImage": "../assets/img/events/backboneofaws.png",
       "tags": ["EC2", "Cloud Computing", "Infrastructure"]
     },
     {
-      "title": "Amazon Elastic Compute Cloud: Backbone of AWS",
-      "description": "Learn how to launch, configure, and manage virtual servers with scalable, secure, and reliable applications. This workshop covers everything you need to know about setting up instances, managing storage and deploying applications on AWS's powerful platform.",
-      "posterImage": "../assets/img/events/temp_banner_2.png",
-      "tags": ["EC2", "Cloud Computing", "Infrastructure"]
+      "title": "AWSCC Containers Day",
+      "description": "Learn practical container management and get hands-on experience with Amazon EKS, ECS, and Fargate. Discover how to simplify deployments and improve efficiency in the cloud!",
+      "posterImage": "../assets/img/events/Containers.png",
+      "tags": ["Containers", "Fargate", "ECS", "EKS"]
     },
     {
-      "title": "Amazon Elastic Compute Cloud: Backbone of AWS",
-      "description": "Learn how to launch, configure, and manage virtual servers with scalable, secure, and reliable applications. This workshop covers everything you need to know about setting up instances, managing storage and deploying applications on AWS's powerful platform.",
-      "posterImage": "../assets/img/events/temp_banner_2.png",
-      "tags": ["EC2", "Cloud Computing", "Infrastructure"]
-    },
-    {
-      "title": "Amazon Elastic Compute Cloud: Backbone of AWS",
-      "description": "Learn how to launch, configure, and manage virtual servers with scalable, secure, and reliable applications. This workshop covers everything you need to know about setting up instances, managing storage and deploying applications on AWS's powerful platform.",
-      "posterImage": "../assets/img/events/temp_banner_2.png",
-      "tags": ["EC2", "Cloud Computing", "Infrastructure"]
+      "title": "AWS CCP Certification Workshop",
+      "description": "Join us for an exclusive AWS Certification Training Event and elevate your cloud skills to new heights! Whether you're starting your journey or aiming to certify, Nelson (our fearless eagle) will guide you through the skies of AWS mastery.",
+      "posterImage": "../assets/img/events/CertificationWorkshop.png",
+      "tags": ["Certification", "AWS CCP", "Cloud Fundamentals"]
     }
   ]
 }
