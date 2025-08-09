@@ -54,7 +54,7 @@ body {
   background: linear-gradient(180deg, #0f0b26 0%, #1e003d 70%);
   height: 100%;
   width: 100vw;
-  overflow: clip;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -1213,11 +1213,80 @@ section.hero {
   }
 }
 
+/* UNIFIED BACKGROUND ELEMENTS*/
+
+/* Page containers with background support */
+.page-with-background {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  isolation: isolate;
+}
+
+/* Unified gradient background */
+.bg-gradient {
+  position: absolute;
+  height: 60vh;
+  width: 100%;
+  align-self: center;
+  left: 50%;
+  top: 50vh;
+  opacity: 0.8;
+  transform-origin: center;
+  transform: translate(-50%, -50%) scale(2.5, 2.8) rotate(-10deg)
+    translate(-8%, -4%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Unified cloud elements */
+.bg-cloud-left {
+  position: absolute;
+  left: -20%;
+  top: 5%;
+  opacity: 0.3;
+  z-index: 1;
+  pointer-events: none;
+  width: 50%;
+  height: auto;
+  max-height: 80vh;
+}
+
+.bg-cloud-right {
+  position: absolute;
+  right: -20%;
+  top: 20%;
+  opacity: 0.3;
+  z-index: 1;
+  pointer-events: none;
+  width: 50%;
+  height: auto;
+  max-height: 80vh;
+}
+
+/* Responsive behavior for background elements */
+@media (max-width: 768px) {
+  .bg-cloud-left,
+  .bg-cloud-left-2,
+  .bg-cloud-right {
+    display: none;
+  }
+
+  .bg-gradient {
+    top: 40vh;
+  }
+}
+
+/* Officers Page Background */
+/* Uses unified background classes: .page-with-background, .bg-gradient, .bg-cloud-left, .bg-cloud-right */
+
 .centerDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 
 /* Leads Section */
@@ -1329,19 +1398,25 @@ section.hero {
 }
 
 /* ABOUT PAGE */
+/* Uses unified background classes: .page-with-background, .bg-gradient, .bg-cloud-left, .bg-cloud-right */
+
 .firstDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 60px;
+  position: relative;
+  z-index: 2;
 }
 
 #about-text {
   text-align: center;
   width: 100%;
-  max-width: 700px; 
-  padding: 0 15px;  
+  max-width: 700px;
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
 }
 
 .club-logo {
@@ -1365,11 +1440,15 @@ section.hero {
   align-items: center;
   padding: 40px 20px;
   gap: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 .box {
   word-wrap: break-word;
   overflow-wrap: break-word;
+  position: relative;
+  z-index: 2;
 }
 
 .box {
@@ -1488,6 +1567,8 @@ section.hero {
 
 
 /* Events CSS */
+/* Uses unified background classes: .page-with-background, .bg-gradient, .bg-cloud-left, .bg-cloud-right */
+
 .events-section {
   margin-top: 10px;
   color: white;
@@ -1497,6 +1578,8 @@ section.hero {
   align-items: flex-start;
   padding: 40px 80px 100px 80px;
   gap: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 .events-section h2 {
@@ -1797,6 +1880,20 @@ section.hero {
   padding: 3rem 1rem 1rem 1rem;
   margin: auto;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4rem;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  width: calc(100% - 8rem);
+  max-width: calc(1400px - 8rem);
 }
 
 .footer-container {
