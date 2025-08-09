@@ -524,8 +524,10 @@ section {
 /* Club Highlights Section */
 .club-highlights {
   position: relative;
-  padding: 80px 40px;
-  min-height: 100vh;
+  padding: 80px 40px 120px;
+  min-height: auto;
+  height: auto;
+  display: block;
   color: white;
   font-family: "Amazon Ember Display", sans-serif;
 }
@@ -542,13 +544,13 @@ section {
   font-size: 1.2rem;
   line-height: 1.6;
   max-width: 800px;
-  margin: 0 auto 20px;
+  margin: 20px auto 40px;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
 }
 
 .club-highlights-content h2 {
-  font-family: "Amazon Ember", sans-serif;
+  font-family: "Geist", sans-serif;
   font-size: 4rem;
   text-align: center;
   background: linear-gradient(135deg, #ffffff 20%, #bbaffd 50%, #efdcf1 100%);
@@ -577,7 +579,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
 }
 
@@ -598,6 +600,85 @@ section {
   background-repeat: no-repeat;
   border-radius: 20px;
   flex: 1;
+}
+
+/* Carousel Styles */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 33.333%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-slide .highlight-image {
+  border-radius: 20px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-prev {
+  left: 20px;
+}
+
+.carousel-next {
+  right: 20px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.indicator {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(1.2);
 }
 
 .highlight-card h3 {
@@ -625,6 +706,7 @@ section {
   border: none;
   backdrop-filter: none;
   height: 540px;
+  overflow: visible;
 }
 
 .stat-card {
@@ -638,16 +720,17 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 170px;
+  height: 170px;
   transition: all 0.3s ease;
   cursor: pointer;
+  border-color: #ffffff8c;
 }
 
 .stat-card h4 {
   font-family: "Amazon Ember", sans-serif;
   font-size: 0.85rem;
   color: rgb(255, 255, 255);
-  margin-bottom: 15px;
+  margin: 15px auto 15px;
   text-transform: uppercase;
   letter-spacing: 0.8px;
   font-weight: 500;
@@ -656,8 +739,8 @@ section {
 .stat-number {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 18px;
+  justify-content: space-between;
+  margin: 0 20px;
 }
 
 .stat-number img {
@@ -682,7 +765,7 @@ section {
 @media (max-width: 1024px) {
   .highlights-cards {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 10px;
     max-width: 700px;
   }
   
@@ -700,6 +783,10 @@ section {
     display: flex;
   }
   
+  .carousel-container {
+    height: 400px;
+  }
+  
   .highlight-image {
     width: 100%;
     height: 400px;
@@ -714,27 +801,37 @@ section {
     flex-direction: row;
     gap: 25px;
     padding: 0;
-    height: 400px;
+    height: 120px;
   }
   
   .stat-card {
-    min-height: 130px;
-    padding: 30px 20px;
+    padding: 0 20px;
+    height: 120px;
+  }
+
+  .stat-card h4 {
+    font-size: 0.9rem;
+    margin: 0 auto 10px;
   }
   
   .stat-number img {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
   
   .stat-number span {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+  }
+
+  .events-gradient {
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
   .club-highlights {
-    padding: 0px 50px;
+    padding: 60px 50px 80px;
+    margin-bottom: 60px;
   }
   
   .club-highlights h2 {
@@ -747,15 +844,19 @@ section {
   }
   
   .highlight-card:first-child {
-    min-height: 320px;
+    min-height: 420px;
     padding: 0;
     width: 100%;
     display: flex;
   }
   
+  .carousel-container {
+    height: 420px;
+  }
+  
   .highlight-image {
     width: 100%;
-    height: 320px;
+    height: 420px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -767,21 +868,62 @@ section {
     flex-direction: column;
     gap: 12px;
     padding: 0;
-    height: 320px;
+    height: auto;
   }
   
   .stat-card {
-    padding: 25px 20px;
-    min-height: 90px;
+    padding: 5px 20px;
+    height: 150px;
   }
   
   .stat-card h4 {
-    font-size: 0.6rem;
-    margin-bottom: 10px;
+    font-size: 0.8rem;
+    margin: 15px auto 10px;
   }
 
   .stat-number {
-    gap: 30px;
+    margin: 0 30px 15px;
+  }
+  
+  .stat-number img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .stat-number span {
+    font-size: 3.8rem;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .carousel-btn:hover {
+    background: rgba(0, 0, 0, 0);
+    transform: translateY(-50%) scale(1.1);
+  }
+}
+
+@media (max-width: 400px) {
+  .club-highlights {
+    padding: 40px 30px 60px;
+    margin-bottom: 40px;
+  }
+
+  .highlight-cards {
+    height: auto;
+  }
+
+  .stat-number {
+    margin: 0 35px 15px;
+  }
+
+  .stat-card h4 {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
   }
   
   .stat-number img {
@@ -1299,40 +1441,16 @@ section {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* Responsive Design */
-@media (max-width: 1600px) {
-  .upcoming-event-card {
-    flex: 0 0 340px;
-    width: 340px;
-    height: 340px;
-  }
-  
-  .upcoming-events-cards {
-    max-width: calc(3 * 300px + 2 * 20px + 40px);
-  }
-  
-  .event-title {
-    font-size: 0.95rem;
-  }
-  
-  .event-description {
-    font-size: 0.75rem;
-  }
-  
-  .event-tag {
-    font-size: 0.7rem;
-  }
-
-  .held-event-left {
-    padding: 30px 250px 30px 100px;
-  }
+#events-page {
+  height: auto;
 }
 
+/* Responsive Design */
 @media (max-width: 1280px) {
   .upcoming-event-card {
-    flex: 0 0 300px;
-    width: 300px;
-    height: 300px;
+    flex: 0 0 400px;
+    width: 400px;
+    height: 400px;
   }
   
   .upcoming-events-cards {
@@ -1344,7 +1462,8 @@ section {
   }
   
   .event-description {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    overflow: ellipsis;
   }
   
   .event-tag {
@@ -1355,12 +1474,8 @@ section {
     padding: 30px 50px 30px 50px;
   }
 
-  .scroll-arrow {
-    display: none;;
-  }
-
   .held-event .event-description {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
   }
 
   .events-section h2 {
@@ -1381,32 +1496,9 @@ section {
   }
 }
 
-@media (max-width: 800px) {
-  .upcoming-event-card {
-    flex: 0 0 260px;
-    width: 260px;
-    height: 260px;
-  }
-  
-  .upcoming-events-cards {
-    max-width: calc(3 * 200px + 2 * 20px + 40px);
-    gap: 15px;
-  }
-  
-  .event-title {
-    font-size: 0.85rem;
-  }
-  
-  .event-description {
-    font-size: 0.65rem;
-  }
-  
-  .event-tag {
-    font-size: 0.6rem;
-  }
-
-  .held-event-left {
-    padding: 30px 150px 30px 100px;
+@media (max-width: 980px) {
+  .scroll-arrow {
+    display: none;
   }
 }
 

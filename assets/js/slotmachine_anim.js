@@ -4,7 +4,7 @@ class AnimatedCounter {
         this.targetValue = parseInt(targetValue);
         this.duration = duration;
         this.hasAnimated = false;
-        this.element.textContent = '0';
+        this.element.textContent = '0+';
     }
     
     animate() {
@@ -19,12 +19,12 @@ class AnimatedCounter {
             const easeOutExpo = progress === 1 ? 1 : 1 - Math.pow(3, -3 * progress);
             const currentValue = Math.floor(easeOutExpo * this.targetValue);
             
-            this.element.textContent = currentValue;
+            this.element.textContent = currentValue + '+';
             
             if (progress < 1) {
                 requestAnimationFrame(updateNumber);
             } else {
-                this.element.textContent = this.targetValue;
+                this.element.textContent = this.targetValue + '+';
             }
         };
         
