@@ -1529,10 +1529,10 @@ section.hero {
 .stat-number {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 20px;
-	gap: 20px;
+  justify-content: center;
+	width: 100%;
 	max-width: 250px;
+	gap: 15px;
 }
 
 .stat-number img {
