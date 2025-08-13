@@ -8,6 +8,7 @@
 html {
   background: transparent; /* For Scroll Overlap from Smooth Scrolling */
   overflow-x: hidden;
+	overscroll-behavior: none;
 }
 
 /* Fonts */
