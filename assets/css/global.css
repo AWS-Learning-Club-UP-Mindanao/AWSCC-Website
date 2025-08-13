@@ -2338,14 +2338,12 @@ section.hero {
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: auto;
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem 2rem 4rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-  padding-bottom: 2rem;
+  gap: 4rem;
 }
 
 .footer-section h3,
@@ -2431,9 +2429,10 @@ section.hero {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 1rem;
-  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 4rem 0 4rem;
+  text-align: left;
   font-family: "Amazon Ember Display", sans-serif;
 }
 
@@ -2449,9 +2448,14 @@ section.hero {
     padding: 2rem 1rem 1rem 1rem;
   }
 
+  .footer::before {
+    display: none;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 0 1rem 2rem 1rem;
   }
 
   .footer-logo {
@@ -2479,6 +2483,11 @@ section.hero {
     display: none;
   }
 
+  .footer-bottom {
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
   .footer-links ul {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -2502,8 +2511,46 @@ section.hero {
 }
 
 @media (min-width: 1024px) {
+  .footer::before {
+    width: calc(100% - 12rem);
+    max-width: calc(1400px - 12rem);
+  }
+
   .footer-container {
     grid-template-columns: 2fr 1fr;
+    padding: 0 6rem 2rem 6rem;
+    gap: 6rem;
+  }
+
+  .footer-bottom {
+    padding: 1rem 6rem 0 6rem;
+  }
+
+  .footer-links {
+    justify-self: end;
+    text-align: left;
+  }
+
+  .footer-links ul {
+    max-width: none;
+    width: 100%;
+    justify-content: end;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer::before {
+    width: calc(100% - 16rem);
+    max-width: calc(1400px - 16rem);
+  }
+
+  .footer-container {
+    padding: 0 8rem 2rem 8rem;
+    gap: 8rem;
+  }
+
+  .footer-bottom {
+    padding: 1rem 8rem 0 8rem;
   }
 }
 
