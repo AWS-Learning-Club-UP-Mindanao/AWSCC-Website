@@ -2,39 +2,27 @@
   "upcomingEvents": [
     {
       "title": "First Line of Defense: AWS Account Security 101 with IAM",
-      "description": "Learn security best practices and set up your first AWS account to get into managing AWS functions and security for personal, corporate and financial users.",
-      "posterImage": "../assets/img/events/temp_banner_1.png",
-      "tags": ["Security", "IAM", "Beginner"]
+      "description": "Learn how to secure your cloud with access control, MFA, key management, and more. Plus, get tips on managing AWS budgets and billing access for total security and financial control.",
+      "posterImage": "../assets/img/events/workshop_1.png",
+      "tags": ["Security", "Cybersecurity", "Defense"]
     },
     {
-      "title": "First Line of Defense: AWS Account Security 101 with IAM",
-      "description": "Learn security best practices and set up your first AWS account to get into managing AWS functions and security for personal, corporate and financial users.",
-      "posterImage": "../assets/img/events/temp_banner_1.png",
-      "tags": ["Security", "IAM", "Beginner"]
+      "title": "Amazon Elastic Compute Cloud: Backbone of AWS",
+      "description": "Learn how to launch, configure, and manage virtual servers in EC2 to build scalable, secure, and reliable application, This workshop covers everything you need to know about setting up instances, managing security, optimizing storage, and deploying application on AWS’s powerful cloud infrastructure.",
+      "posterImage": "../assets/img/events/workshop_2.png",
+      "tags": ["EC2", "Cloud Computing", "Infrastructure"]
     },
     {
-      "title": "First Line of Defense: AWS Account Security 101 with IAM",
-      "description": "Learn security best practices and set up your first AWS account to get into managing AWS functions and security for personal, corporate and financial users.",
-      "posterImage": "../assets/img/events/temp_banner_1.png",
-      "tags": ["Security", "IAM", "Beginner"]
+      "title": "AWSCC Containers Day",
+      "description": "Learn practical container management and get hands-on experience with Amazon EKS, ECS, and Fargate. Discover how to simplify deployments and improve efficiency in the cloud!",
+      "posterImage": "../assets/img/events/workshop_3.png",
+      "tags": ["Containers", "Fargate", "ECS", "EKS"]
     },
     {
-      "title": "First Line of Defense: AWS Account Security 101 with IAM",
-      "description": "Learn security best practices and set up your first AWS account to get into managing AWS functions and security for personal, corporate and financial users.",
-      "posterImage": "../assets/img/events/temp_banner_1.png",
-      "tags": ["Security", "IAM", "Beginner"]
-    },
-    {
-      "title": "First Line of Defense: AWS Account Security 101 with IAM",
-      "description": "Learn security best practices and set up your first AWS account to get into managing AWS functions and security for personal, corporate and financial users.",
-      "posterImage": "../assets/img/events/temp_banner_1.png",
-      "tags": ["Security", "IAM", "Beginner"]
-    },
-    {
-      "title": "More Coming Soon",
-      "description": "Stay tuned for more exciting events and workshops coming your way!",
-      "posterImage": null,
-      "isComingSoon": true
+      "title": "AWS CCP Certification Workshop",
+      "description": "Join us for an exclusive AWS Certification Training Event and elevate your cloud skills to new heights! Whether you're starting your journey or aiming to certify, Nelson (our fearless eagle) will guide you through the skies of AWS mastery.",
+      "posterImage": "../assets/img/events/workshop_4.png",
+      "tags": ["Certification", "AWS CCP", "Cloud Fundamentals"]
     }
   ]
 }
