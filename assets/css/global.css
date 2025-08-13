@@ -2145,6 +2145,22 @@ section.hero {
   font-family: "Amazon Ember Display", sans-serif;
 }
 
+.event-poster-fallback {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  text-align: center;
+	padding: 50px;
+}
+
+.fallback-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
 /* Upcoming Events Specific Styles */
 .upcoming-event-card.coming-soon .event-card-content {
   background: rgba(26, 15, 46, 0.103);
@@ -2314,6 +2330,7 @@ section.hero {
     display: none;
   }
 }
+
 
 /* FOOTER STYLES */
 .footer {
