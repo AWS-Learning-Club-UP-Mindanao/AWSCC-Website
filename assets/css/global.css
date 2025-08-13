@@ -1505,8 +1505,8 @@ section.hero {
   justify-content: center;
   height: 170px;
   transition: all 0.3s ease;
-  cursor: pointer;
   border-color: #ffffff8c;
+	align-items: center;
 }
 
 .stat-card h4 {
@@ -1524,6 +1524,8 @@ section.hero {
   align-items: center;
   justify-content: space-between;
   margin: 0 20px;
+	gap: 20px;
+	max-width: 250px;
 }
 
 .stat-number img {
@@ -1548,7 +1550,7 @@ section.hero {
 @media (max-width: 1024px) {
   .highlights-cards {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 20px;
     max-width: 700px;
   }
   
@@ -1649,7 +1651,7 @@ section.hero {
   
   .highlights-cards .highlight-card:last-child {
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
     padding: 0;
     height: auto;
   }
