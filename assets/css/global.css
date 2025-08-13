@@ -1507,6 +1507,13 @@ section.hero {
   transition: all 0.3s ease;
   border-color: #ffffff8c;
 	align-items: center;
+	transform: scale(1);
+	transition: transform 0.5s;
+}
+
+.stat-card:hover {
+	transform: scale(1.05);
+	transition: transform 0.5s;
 }
 
 .stat-card h4 {
