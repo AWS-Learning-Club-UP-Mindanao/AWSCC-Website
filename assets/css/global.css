@@ -1785,9 +1785,12 @@ section.hero {
 
 /* Officer Card */
 .officer-card {
+	display: flex;
 	position: relative;
+	justify-content: center;
 	z-index: 1;
 	width: 250px;
+	height: 350px;
 	border: 1px var(--officerBorderColor) solid;
 	border-radius: 10px;
 	background-color: var(--officerBgColor);
@@ -1824,7 +1827,7 @@ section.hero {
 }
 
 .headShot {
-	width: 100%;
+	height: 100%;
 	display: block;
 }
 

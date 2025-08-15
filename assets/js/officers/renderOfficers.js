@@ -15,6 +15,8 @@ export const renderLeads = (leadsContainer) => {
             card.querySelector(".officer-name").textContent = lead.Name;
             card.querySelector(".officer-position").textContent = lead.Position;
             card.querySelector(".officer-desc").textContent = lead.Description;
+            card.querySelector(".headShot").src = lead.Image;
+            card.querySelector(".headShot").alt = `${lead.Name} - ${lead.Position}`;
 
             leadsContainer.appendChild(card);
           })
@@ -42,6 +44,8 @@ export const renderDepartmentHeads = (headsContainer) => {
             card.querySelector(".officer-name").textContent = departmentHeads.Name;
             card.querySelector(".officer-position").textContent = departmentHeads.Position;
             card.querySelector(".officer-desc").textContent = departmentHeads.Description;
+            card.querySelector(".headShot").src = departmentHeads.Image;
+            card.querySelector(".headShot").alt = `${departmentHeads.Name} - ${departmentHeads.Position}`;
 
             headsContainer.appendChild(card);
           })
@@ -69,6 +73,8 @@ export const renderCommitteeHeads = (committeeContainer) => {
             card.querySelector(".officer-name").textContent = committeeHeads.Name;
             card.querySelector(".officer-position").textContent = committeeHeads.Position;
             card.querySelector(".officer-desc").textContent = committeeHeads.Description;
+            card.querySelector(".headShot").src = committeeHeads.Image;
+            card.querySelector(".headShot").alt = `${committeeHeads.Name} - ${committeeHeads.Position}`;
 
             committeeContainer.appendChild(card);
           })

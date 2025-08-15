@@ -1,34 +1,76 @@
 {
-  "departmentHeads":[
+  "departmentHeads": [
     {
-      "Name": "Yldevier Magpusao",
-      "Position": "Cloud Captain",
-      "Description": "mahilig magmahal"
+      "Name": "Senoy, Kyle",
+      "Position": "Networking Head",
+      "Description": "kaon para dili mabrader",
+      "Image": "../assets/img/officers/kyle.png"
     },
     {
-      "Name": "Breindel Medina",
-      "Position": "Department Lead",
-      "Description": "mahilig magpakaboboo"
+      "Name": "Lo Priego, Carlos Don",
+      "Position": "Networking Co-Head",
+      "Description": "mahilig magpakaboboo",
+      "Image": "../assets/img/officers/carlos.png"
     },
     {
-      "Name": "Ed Ian Jay Baguio",
-      "Position": "Committee Lead",
-      "Description": "spiderman"
+      "Name": "Natividad, Deniel Dave",
+      "Position": "Cloud Computing Head",
+      "Description": "quote? kanang di ko lamigon",
+      "Image": "../assets/img/officers/deniel.png"
     },
     {
-      "Name": "Yldevier Magpusao",
-      "Position": "Cloud Captain",
-      "Description": "mahilig magmahal"
+      "Name": "Morgia, Maron",
+      "Position": "Cloud Computing Co-Head",
+      "Description": "Cris himoi ko quote",
+      "Image": "../assets/img/officers/maron.png"
     },
     {
-      "Name": "Breindel Medina",
-      "Position": "Department Lead",
-      "Description": "mahilig magpakaboboo"
+      "Name": "Albinda, Alex Neal",
+      "Position": "Data Analytics Head",
+      "Description": "Ang haba hehe",
+      "Image": "../assets/img/officers/alex.png"
     },
     {
-      "Name": "Ed Ian Jay Baguio",
-      "Position": "Committee Lead",
-      "Description": "spiderman"
+      "Name": "Bihag, Raphael",
+      "Position": "Data Analytics Co-Head",
+      "Description": "wala koy quote mabutang grahh",
+      "Image": "../assets/img/officers/raphael.png"
+    },
+    {
+      "Name": "Peña, Mark Jaily",
+      "Position": "Machine Learning Head",
+      "Description": "Give me a random quote for our officers' posting",
+      "Image": "../assets/img/officers/mark.png"
+    },
+    {
+      "Name": "Lambayao, Liarrah Daniya",
+      "Position": "Machine Learning Co-Head",
+      "Description": "Sure! Here is a quote for you: 'The best way to predict the future is to create it.' - Peter Drucker",
+      "Image": "../assets/img/officers/liarrah.png"
+    },
+    {
+      "Name": "Jomuad, Precious Mae",
+      "Position": "Security Head",
+      "Description": "Dito mo yan gawin sa Nabunturan! - Francis Nabunturan",
+      "Image": "../assets/img/officers/precious.png"
+    },
+    {
+      "Name": "Taclindo, Borgy Lance",
+      "Position": "Security Co-Head",
+      "Description": "You are bound by nothing",
+      "Image": "../assets/img/officers/borgy.png"
+    },
+    {
+      "Name": "Veloso, Justin Dominic",
+      "Position": "Software & Web Development Head",
+      "Description": "If you don't take risks, you can't create a future",
+      "Image": "../assets/img/officers/justin.png"
+    },
+    {
+      "Name": "Medina, Breindel",
+      "Position": "Software & Web Development Co-Head",
+      "Description": "Kaya ako di natutulog, binabantayan ko lang sarili ko",
+      "Image": "../assets/img/officers/breindel.png"
     }
   ]
 }
