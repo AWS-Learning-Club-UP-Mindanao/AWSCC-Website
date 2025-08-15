@@ -1788,13 +1788,35 @@ section.hero {
 	display: flex;
 	position: relative;
 	justify-content: center;
+	align-items: flex-end; /* Align content to bottom */
 	z-index: 1;
 	width: 250px;
 	height: 350px;
 	border: 1px var(--officerBorderColor) solid;
 	border-radius: 10px;
 	background-color: var(--officerBgColor);
-	overflow: hidden;
+	overflow: hidden; /* Clips image in normal state */
+}
+
+/* Animation keyframes for delayed overflow */
+@keyframes delayedOverflowHidden {
+	0% { overflow: visible; }
+	99.9% { overflow: visible; }
+	100% { overflow: hidden; }
+}
+
+@keyframes immediateOverflowVisible {
+	0% { overflow: visible; }
+	100% { overflow: visible; }
+}
+
+.officer-card:not(:hover) {
+	animation: delayedOverflowHidden 0.5s ease-in-out forwards;
+}
+
+.officer-card:hover {
+	animation: immediateOverflowVisible 0s ease-in-out forwards;
+	z-index: 10;
 }
 
 .officer-info {
@@ -1804,6 +1826,9 @@ section.hero {
 	padding-bottom: 10px;
 	width: 100%;
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+	z-index: 2; /* Ensure text stays above the image */
 }
 
 .officer-name {
@@ -1828,7 +1853,13 @@ section.hero {
 
 .headShot {
 	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center bottom; /* Anchor image to bottom */
 	display: block;
+	transition: transform 0.5s ease-in-out;
+	transform-origin: center bottom; /* Scale from bottom center */
+	z-index: 1;
 }
 
 .headShot::after {
@@ -1841,6 +1872,14 @@ section.hero {
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
 	backdrop-filter: blur(6px);
 	pointer-events: none;
+}
+
+.officer-card:hover .headShot {
+	transform: scale(1.2);
+}
+
+.officer-card:hover .officer-info {
+	opacity: 0;
 }
 
 /* ABOUT PAGE */
