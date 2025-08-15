@@ -1829,6 +1829,8 @@ section.hero {
 	opacity: 1;
 	transition: opacity 0.3s ease-in-out;
 	z-index: 2; /* Ensure text stays above the image */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .officer-name {
@@ -1860,6 +1862,7 @@ section.hero {
 	transition: transform 0.5s ease-in-out;
 	transform-origin: center bottom; /* Scale from bottom center */
 	z-index: 1;
+	border-radius: 10px;
 }
 
 .headShot::after {
