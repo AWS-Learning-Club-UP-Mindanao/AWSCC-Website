@@ -1770,7 +1770,7 @@ section.hero {
 #officers-text {
   text-align: center;
   width: 100%;
-	padding: 0 40px;
+	padding: 0 12%;
 }
 
 .officers-heading {
@@ -2070,6 +2070,10 @@ section.hero {
     flex: 0 0 280px;
     scroll-snap-align: center;
   }
+	
+	.officers-text {
+		padding: 0 40px;
+	}
 }
 
 @media (max-width: 480px) {
