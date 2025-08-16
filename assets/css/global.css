@@ -1744,7 +1744,7 @@ section.hero {
 #leads-component,
 #deptHeads-component,
 #committeeHeads-component {
-	margin-top: 70px;
+	margin-top: 20px;
 }
 
 #committeeHeads-component {
@@ -1769,7 +1769,8 @@ section.hero {
 /* Officer Heading and Subheading */
 #officers-text {
   text-align: center;
-  width: 700px;
+  width: 100%;
+	padding: 0 40px;
 }
 
 .officers-heading {
@@ -2018,6 +2019,57 @@ section.hero {
     font-size: 28px;
     white-space: nowrap;
   }
+
+  /* Officers Page Mobile Responsiveness */
+  #leads-component,
+  #deptHeads-component,
+  #committeeHeads-component {
+    width: 100%;
+    max-width: none;
+    padding: 10px 0;
+  }
+
+  .leads-heading,
+  .deptHeads-heading,
+  .committeeHeads-heading {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 40px;
+  }
+
+  #leads-cards,
+  #deptHeads-cards,
+  #committeeHeads-cards {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 0 calc(50vw - 140px);
+    margin-top: 0;
+    scroll-snap-type: x mandatory;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  #leads-cards::-webkit-scrollbar,
+  #deptHeads-cards::-webkit-scrollbar,
+  #committeeHeads-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  #leads-cards,
+  #deptHeads-cards,
+  #committeeHeads-cards {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .officer-card {
+    flex: 0 0 280px;
+    scroll-snap-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2050,6 +2102,40 @@ section.hero {
   .officers-heading {
     font-size: 22px;
     white-space: nowrap;
+  }
+
+	.officers-description {
+    font-size: 16px;
+	}
+
+  /* Officers Page Mobile Responsiveness - Smaller screens */
+  #leads-component,
+  #deptHeads-component,
+  #committeeHeads-component {
+    padding: 30px 0;
+  }
+
+  #leads-component {
+		margin-top: 50px;
+	}
+
+  .officer-card {
+    flex: 0 0 250px;
+    scroll-snap-align: center;
+  }
+
+  .leads-heading,
+  .deptHeads-heading,
+  .committeeHeads-heading {
+    font-size: 28px;
+    padding: 0 30px;
+  }
+
+  #leads-cards,
+  #deptHeads-cards,
+  #committeeHeads-cards {
+    gap: 15px;
+    padding: 0 calc(50vw - 125px);
   }
 }
 
