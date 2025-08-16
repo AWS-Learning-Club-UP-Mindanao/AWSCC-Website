@@ -1744,7 +1744,7 @@ section.hero {
 #leads-component,
 #deptHeads-component,
 #committeeHeads-component {
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 #committeeHeads-component {
@@ -2034,7 +2034,6 @@ section.hero {
   .committeeHeads-heading {
     font-size: 32px;
     text-align: center;
-    margin-bottom: 20px;
     padding: 0 40px;
   }
 
@@ -2045,12 +2044,13 @@ section.hero {
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
-    gap: 20px;
+    gap: 30px;
     padding: 0 calc(50vw - 140px);
     margin-top: 0;
     scroll-snap-type: x mandatory;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
+		padding-top: 50px;
   }
 
   #leads-cards::-webkit-scrollbar,
