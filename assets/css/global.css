@@ -2139,7 +2139,7 @@ section.hero {
   #deptHeads-cards,
   #committeeHeads-cards {
     gap: 15px;
-    padding: 0 calc(50vw - 125px);
+    padding: 50px calc(50vw - 125px) 0 calc(50vw - 125px);
   }
 }
 
