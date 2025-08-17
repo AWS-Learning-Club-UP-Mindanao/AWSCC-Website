@@ -1732,14 +1732,6 @@ section.hero {
   }
 }
 
-/* Leads Section */
-#leads-cards {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-}
-
 /* Department Heads Section */
 #leads-component,
 #deptHeads-component,
@@ -1758,12 +1750,15 @@ section.hero {
   font-family: "Amazon Ember", sans-serif;
 }
 
+#leads-cards,
 #deptHeads-cards,
 #committeeHeads-cards {
+  display: flex;
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0 8%;
 }
 
 /* Officer Heading and Subheading */
@@ -2041,6 +2036,7 @@ section.hero {
   #deptHeads-cards,
   #committeeHeads-cards {
     display: flex;
+		flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -2051,6 +2047,7 @@ section.hero {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
 		padding-top: 50px;
+		justify-content: normal;
   }
 
   #leads-cards::-webkit-scrollbar,
