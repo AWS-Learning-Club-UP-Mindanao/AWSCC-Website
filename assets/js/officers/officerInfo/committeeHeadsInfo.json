@@ -49,14 +49,8 @@
       "Image": "../assets/img/officers/Max.png"
     },
     {
-      "Name": "Siapuatco, Aaron Dave",
-      "Position": "Relations Head",
-      "Description": "It is what is it",
-      "Image": "../assets/img/officers/Aaron.png"
-    },
-    {
       "Name": "Banac, Catherine",
-      "Position": "Relations Co-Head",
+      "Position": "Relations Head",
       "Description": "You should never regret the things you do. you should only regret the things you don’t do.",
       "Image": "../assets/img/officers/Catherine.png"
     }
