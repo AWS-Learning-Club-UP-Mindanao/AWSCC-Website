@@ -1732,14 +1732,6 @@ section.hero {
   }
 }
 
-/* Leads Section */
-#leads-cards {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-}
-
 /* Department Heads Section */
 #leads-component,
 #deptHeads-component,
@@ -1758,12 +1750,15 @@ section.hero {
   font-family: "Amazon Ember", sans-serif;
 }
 
+#leads-cards,
 #deptHeads-cards,
 #committeeHeads-cards {
+  display: flex;
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0 8%;
 }
 
 /* Officer Heading and Subheading */
@@ -1855,8 +1850,7 @@ section.hero {
 }
 
 .headShot {
-	height: 100%;
-	width: 100%;
+	height: 90%;
 	object-fit: cover;
 	object-position: center bottom; /* Anchor image to bottom */
 	display: block;
@@ -2041,6 +2035,7 @@ section.hero {
   #deptHeads-cards,
   #committeeHeads-cards {
     display: flex;
+		flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -2051,6 +2046,7 @@ section.hero {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
 		padding-top: 50px;
+		justify-content: normal;
   }
 
   #leads-cards::-webkit-scrollbar,
@@ -2139,7 +2135,7 @@ section.hero {
   #deptHeads-cards,
   #committeeHeads-cards {
     gap: 15px;
-    padding: 0 calc(50vw - 125px);
+    padding: 50px calc(50vw - 125px) 0 calc(50vw - 125px);
   }
 }
 
@@ -2162,7 +2158,7 @@ section.hero {
 
 .events-section h2 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 20px;
   color: white;
 }
@@ -2196,6 +2192,7 @@ section.hero {
   justify-content: flex-start;
   min-width: 100%;
   max-width: calc(3 * 320px + 2 * 20px + 40px);
+	scroll-snap-type: x mandatory;
 }
 
 .upcoming-events-cards::-webkit-scrollbar {
@@ -2205,12 +2202,14 @@ section.hero {
 .upcoming-event-card {
   flex: 0 0 500px;
   height: 500px;
+	min-width: 300px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   padding: 0;
   border: 3px solid rgba(187, 187, 187, 0.452);
   overflow: hidden;
   position: relative;
+	scroll-snap-align: center;
 }
 
 .upcoming-event-card.coming-soon {
@@ -2367,7 +2366,7 @@ section.hero {
 }
 
 .held-event-left {
-  flex: 0 0 70%;
+  flex: 0 0 60%;
   padding: 30px 300px 30px 100px;
   background: linear-gradient(135deg, #2a1f4f 0%, #1a0f2e 100%);
   display: flex;
@@ -2379,7 +2378,7 @@ section.hero {
 }
 
 .held-event-right {
-  flex: 0 0 30%;
+  flex: 0 0 40%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -2447,10 +2446,6 @@ section.hero {
     font-size: 2.4rem;
   }
 
-  .events-top-header h1 {
-    font-size: 5rem;
-  }
-
   .events-header h2 {
     font-size: 2.4rem;
   }
@@ -2465,8 +2460,36 @@ section.hero {
   .scroll-arrow {
     display: none;
   }
+  
+  .upcoming-events-cards {
+		padding: 0 calc(50vh - 200px);
+  }
+
+	.events-section {
+  	align-items: center;
+	}
 }
 
+@media (max-width: 768px) {
+	.events-section {
+		padding: 40px 40px 100px 40px;
+		text-align: center;
+	}
+
+	.held-event-card {
+		flex-direction: column-reverse;
+	}
+
+	.held-events-list {
+		gap: 40px;
+	}
+}
+
+@media (max-width: 480px) {
+	.upcoming-event-card {
+		flex: 0 0 300px;
+	}
+}
 
 /* FOOTER STYLES */
 .footer {

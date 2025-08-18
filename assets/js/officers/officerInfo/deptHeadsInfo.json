@@ -4,73 +4,73 @@
       "Name": "Senoy, Kyle",
       "Position": "Networking Head",
       "Description": "kaon para dili mabrader",
-      "Image": "../assets/img/officers/kyle.jpg"
+      "Image": "../assets/img/officers/Kyle.png"
     },
     {
       "Name": "Lo Priego, Carlos Don",
       "Position": "Networking Co-Head",
       "Description": "mahilig magpakaboboo",
-      "Image": "../assets/img/officers/carlos.png"
+      "Image": "../assets/img/officers/Carlos.png"
     },
     {
       "Name": "Natividad, Deniel Dave",
       "Position": "Cloud Computing Head",
       "Description": "quote? kanang di ko lamigon",
-      "Image": "../assets/img/officers/deniel.png"
+      "Image": "../assets/img/officers/Deniel.png"
     },
     {
       "Name": "Morgia, Maron",
       "Position": "Cloud Computing Co-Head",
       "Description": "Cris himoi ko quote",
-      "Image": "../assets/img/officers/maron.png"
+      "Image": "../assets/img/officers/Maron.png"
     },
     {
       "Name": "Albinda, Alex Neal",
       "Position": "Data Analytics Head",
       "Description": "Ang haba hehe",
-      "Image": "../assets/img/officers/alex.png"
+      "Image": "../assets/img/officers/Alex.png"
     },
     {
       "Name": "Bihag, Raphael",
       "Position": "Data Analytics Co-Head",
       "Description": "wala koy quote mabutang grahh",
-      "Image": "../assets/img/officers/raphael.png"
+      "Image": "../assets/img/officers/Raphael.png"
     },
     {
       "Name": "Peña, Mark Jaily",
       "Position": "Machine Learning Head",
       "Description": "Give me a random quote for our officers' posting",
-      "Image": "../assets/img/officers/mark.png"
+      "Image": "../assets/img/officers/Mark.png"
     },
     {
       "Name": "Lambayao, Liarrah Daniya",
       "Position": "Machine Learning Co-Head",
       "Description": "Sure! Here is a quote for you: 'The best way to predict the future is to create it.' - Peter Drucker",
-      "Image": "../assets/img/officers/liarrah.png"
+      "Image": "../assets/img/officers/Liarrah.png"
     },
     {
       "Name": "Jomuad, Precious Mae",
       "Position": "Security Head",
       "Description": "Dito mo yan gawin sa Nabunturan! - Francis Nabunturan",
-      "Image": "../assets/img/officers/precious.png"
+      "Image": "../assets/img/officers/Precious.png"
     },
     {
       "Name": "Taclindo, Borgy Lance",
       "Position": "Security Co-Head",
       "Description": "You are bound by nothing",
-      "Image": "../assets/img/officers/borgy.jpeg"
+      "Image": "../assets/img/officers/Borgy.png"
     },
     {
       "Name": "Veloso, Justin Dominic",
       "Position": "Software & Web Development Head",
       "Description": "If you don't take risks, you can't create a future",
-      "Image": "../assets/img/officers/justin.png"
+      "Image": "../assets/img/officers/Justin.png"
     },
     {
       "Name": "Medina, Breindel",
       "Position": "Software & Web Development Co-Head",
       "Description": "Kaya ako di natutulog, binabantayan ko lang sarili ko",
-      "Image": "../assets/img/officers/breindel.png"
+      "Image": "../assets/img/officers/Breindel.png"
     }
   ]
 }

@@ -4,61 +4,55 @@
       "Name": "Charisse, Lorejo",
       "Position": "Creatives Head",
       "Description": "Abi nakog mangga ray aslomn, imong ilok pod diay.",
-      "Image": "../assets/img/officers/charisse.png"
+      "Image": "../assets/img/officers/Charisse.png"
     },
     {
       "Name": "Minguez, Errol James",
       "Position": "Creatives Co-Head",
       "Description": "akoa nasad??",
-      "Image": "../assets/img/officers/errol.png"
+      "Image": "../assets/img/officers/Errol.png"
     },
     {
       "Name": "Ceballos, Cristieneil",
       "Position": "Logistics & Finance Head",
       "Description": "kung ang bridge ay tulay, ug ako nalang diay",
-      "Image": "../assets/img/officers/cris.png"
+      "Image": "../assets/img/officers/Cris.png"
     },
     {
       "Name": "Arranguez, Francis Reid",
       "Position": "Logistics & Finance Co-Head",
       "Description": "Dito mo yan gawin sa Nabunturan!",
-      "Image": "../assets/img/officers/francis.png"
+      "Image": "../assets/img/officers/Francis.png"
     },
     {
       "Name": "Dongon, Karlo Louis",
       "Position": "Promotions Head",
       "Description": "\"Kaon na Bogartz\" - akong Mama",
-      "Image": "../assets/img/officers/karlo.png"
+      "Image": "../assets/img/officers/Karlo.png"
     },
     {
       "Name": "Royo, Dave Christian",
       "Position": "Promotions Co-Head",
       "Description": "Te pabili nga po c2 yung kulay red",
-      "Image": "../assets/img/officers/dave.png"
+      "Image": "../assets/img/officers/Dave.png"
     },
     {
       "Name": "Organiza, Trixie Nicole",
       "Position": "Operations Head",
       "Description": "Pwede nani?",
-      "Image": "../assets/img/officers/trixie.png"
+      "Image": "../assets/img/officers/Trixie.png"
     },
     {
       "Name": "Gazo, Maxwell Dave",
       "Position": "Operations Co-Head",
       "Description": "\"okay na 'to\" - Lebron James",
-      "Image": "../assets/img/officers/max.png"
-    },
-    {
-      "Name": "Siapuatco, Aaron Dave",
-      "Position": "Relations Head",
-      "Description": "It is what is it",
-      "Image": "../assets/img/officers/aaron.png"
+      "Image": "../assets/img/officers/Max.png"
     },
     {
       "Name": "Banac, Catherine",
-      "Position": "Relations Co-Head",
+      "Position": "Relations Head",
       "Description": "You should never regret the things you do. you should only regret the things you don’t do.",
-      "Image": "../assets/img/officers/catherine.png"
+      "Image": "../assets/img/officers/Catherine.png"
     }
   ]
 }

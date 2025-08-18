@@ -4,19 +4,19 @@
       "Name": "Medina, Breindel",
       "Position": "Department Lead",
       "Description": "Kaya ako di natutulog, binabantayan ko lang sarili ko",
-      "Image": "../assets/img/officers/breindel.png"
+      "Image": "../assets/img/officers/Breindel.png"
     },
     {
       "Name": "Magpusao, Yldevier John",
       "Position": "Cloud Captain",
-      "Description": "Tagnaa ninyo kung aans pa ba o alaws na. Pero 5g lang goods na.",
-      "Image": "../assets/img/officers/yldevier.png"
+      "Description": "Kung papilion ka, diploma o diskartehan tka?",
+      "Image": "../assets/img/officers/Yldevier.png"
     },
     {
       "Name": "Baguio, Ed Ian Jay",
       "Position": "Committee Lead",
       "Description": "Okey na 'to..... okay na to level up the game and skills rorrr",
-      "Image": "../assets/img/officers/ed.png"
+      "Image": "../assets/img/officers/Ed.png"
     }
   ]
 }
