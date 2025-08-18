@@ -1850,8 +1850,7 @@ section.hero {
 }
 
 .headShot {
-	height: 100%;
-	width: 100%;
+	height: 90%;
 	object-fit: cover;
 	object-position: center bottom; /* Anchor image to bottom */
 	display: block;
