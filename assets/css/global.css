@@ -2158,7 +2158,7 @@ section.hero {
 
 .events-section h2 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 20px;
   color: white;
 }
@@ -2192,6 +2192,7 @@ section.hero {
   justify-content: flex-start;
   min-width: 100%;
   max-width: calc(3 * 320px + 2 * 20px + 40px);
+	scroll-snap-type: x mandatory;
 }
 
 .upcoming-events-cards::-webkit-scrollbar {
@@ -2201,12 +2202,14 @@ section.hero {
 .upcoming-event-card {
   flex: 0 0 500px;
   height: 500px;
+	min-width: 300px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   padding: 0;
   border: 3px solid rgba(187, 187, 187, 0.452);
   overflow: hidden;
   position: relative;
+	scroll-snap-align: center;
 }
 
 .upcoming-event-card.coming-soon {
@@ -2363,7 +2366,7 @@ section.hero {
 }
 
 .held-event-left {
-  flex: 0 0 70%;
+  flex: 0 0 60%;
   padding: 30px 300px 30px 100px;
   background: linear-gradient(135deg, #2a1f4f 0%, #1a0f2e 100%);
   display: flex;
@@ -2375,7 +2378,7 @@ section.hero {
 }
 
 .held-event-right {
-  flex: 0 0 30%;
+  flex: 0 0 40%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -2443,10 +2446,6 @@ section.hero {
     font-size: 2.4rem;
   }
 
-  .events-top-header h1 {
-    font-size: 5rem;
-  }
-
   .events-header h2 {
     font-size: 2.4rem;
   }
@@ -2461,8 +2460,36 @@ section.hero {
   .scroll-arrow {
     display: none;
   }
+  
+  .upcoming-events-cards {
+		padding: 0 calc(50vh - 200px);
+  }
+
+	.events-section {
+  	align-items: center;
+	}
 }
 
+@media (max-width: 768px) {
+	.events-section {
+		padding: 40px 40px 100px 40px;
+		text-align: center;
+	}
+
+	.held-event-card {
+		flex-direction: column-reverse;
+	}
+
+	.held-events-list {
+		gap: 40px;
+	}
+}
+
+@media (max-width: 480px) {
+	.upcoming-event-card {
+		flex: 0 0 300px;
+	}
+}
 
 /* FOOTER STYLES */
 .footer {
