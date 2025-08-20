@@ -1,11 +1,6 @@
 {
-	// Vercel Configuration
 	"$schema": "https://openapi.vercel.sh/vercel.json",
-
-	// Removes file extension in URL
 	"cleanUrls": true,
-
-	// Cleans URL by replacing actual file route with a simplified name
 	"redirects": [
 		{
 			"source": "/about",
