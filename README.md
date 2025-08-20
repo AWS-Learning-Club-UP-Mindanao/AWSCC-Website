@@ -196,3 +196,38 @@ Only leads are allowed to merge into `main`.
 Stick to a **1 ticket = 1 branch** rule to make tracking and reviews easier. Never reuse branches across tickets.
 
 > **If you're unsure about any step, ask your lead! We're all learning—no shame in asking.**
+
+---
+
+## Vercel Configuration
+
+This project uses Vercel configuration (vercel.json) to manage clean URLs and page redirects.
+
+
+### Clean URLs
+
+```json
+"cleanUrls": true
+```
+Removes the `.html` extension from browser URLs
+
+### Redirects
+
+```json
+"redirects": [
+  {
+    "source": "/about",
+    "destination": "/pages/about.html",
+    "permanent": true
+  }
+]
+```
+
+Maps a simplified path to the actual HTML file.
+
+Example:
+- /about will serve /pages/about.html
+- /events will serve /pages/events.html
+- /officers will serve /pages/officers.html
+
+The `"permanent": true` flag makes the redirect a 301 (permanent redirect), which is good for SEO.
