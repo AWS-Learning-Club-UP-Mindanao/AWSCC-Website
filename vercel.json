@@ -1,0 +1,21 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"cleanUrls": true,
+	"redirects": [
+		{
+			"source": "/about",
+			"destination": "/pages/about.html",
+			"permanent": true
+		},
+		{
+			"source": "/events",
+			"destination": "/pages/events.html",
+			"permanent": true
+		},
+		{
+			"source": "/officers",
+			"destination": "/pages/officers.html",
+			"permanent": true
+		}
+	]
+}
