@@ -3,25 +3,25 @@
     {
       "Name": "Senoy, Kyle",
       "Position": "Networking Head",
-      "Description": "kaon para dili mabrader",
+      "Description": "\"Each choice changes everything\" (Wraith)",
       "Image": "../assets/img/officers/Kyle.png"
     },
     {
       "Name": "Lo Priego, Carlos Don",
       "Position": "Networking Co-Head",
-      "Description": "mahilig magpakaboboo",
+      "Description": "To gain something, you must give something in return.",
       "Image": "../assets/img/officers/Carlos.png"
     },
     {
       "Name": "Natividad, Deniel Dave",
       "Position": "Cloud Computing Head",
-      "Description": "quote? kanang di ko lamigon",
+      "Description": "Don’t you dare go hollow",
       "Image": "../assets/img/officers/Deniel.png"
     },
     {
       "Name": "Morgia, Maron",
       "Position": "Cloud Computing Co-Head",
-      "Description": "Cris himoi ko quote",
+      "Description": "If you don't give it your all then how much do you really want it",
       "Image": "../assets/img/officers/Maron.png"
     },
     {
@@ -33,7 +33,7 @@
     {
       "Name": "Bihag, Raphael",
       "Position": "Data Analytics Co-Head",
-      "Description": "wala koy quote mabutang grahh",
+      "Description": "Do your best to trust all the rays of light",
       "Image": "../assets/img/officers/Raphael.png"
     },
     {
@@ -45,13 +45,13 @@
     {
       "Name": "Lambayao, Liarrah Daniya",
       "Position": "Machine Learning Co-Head",
-      "Description": "Sure! Here is a quote for you: 'The best way to predict the future is to create it.' - Peter Drucker",
+      "Description": "Showing up matters.",
       "Image": "../assets/img/officers/Liarrah.png"
     },
     {
       "Name": "Jomuad, Precious Mae",
       "Position": "Security Head",
-      "Description": "Dito mo yan gawin sa Nabunturan! - Francis Nabunturan",
+      "Description": "Your fear of looking stupid is holding you back.",
       "Image": "../assets/img/officers/Precious.png"
     },
     {
@@ -63,13 +63,13 @@
     {
       "Name": "Veloso, Justin Dominic",
       "Position": "Software & Web Development Head",
-      "Description": "If you don't take risks, you can't create a future",
+      "Description": "If you don't take risks, you can't create a future.",
       "Image": "../assets/img/officers/Justin.png"
     },
     {
       "Name": "Medina, Breindel",
       "Position": "Software & Web Development Co-Head",
-      "Description": "Kaya ako di natutulog, binabantayan ko lang sarili ko",
+      "Description": "You lose today chasing what you can’t control.",
       "Image": "../assets/img/officers/Breindel.png"
     }
   ]
