@@ -4,19 +4,19 @@
       "Name": "Medina, Breindel",
       "Position": "Department Lead",
       "Description": "You lose today chasing what you can’t control.",
-      "Image": "../assets/img/officers/Breindel.png"
+      "Image": "../assets/img/officers/Breindel.webp"
     },
     {
       "Name": "Magpusao, Yldevier John",
       "Position": "Cloud Captain",
       "Description": "The quieter you become, the more you are able to hear.",
-      "Image": "../assets/img/officers/Yldevier.png"
+      "Image": "../assets/img/officers/Yldevier.webp"
     },
     {
       "Name": "Baguio, Ed Ian Jay",
       "Position": "Committee Lead",
       "Description": "Like Pb, leadership is heavy—but it shapes the way forward.",
-      "Image": "../assets/img/officers/Ed.png"
+      "Image": "../assets/img/officers/Ed.webp"
     }
   ]
 }

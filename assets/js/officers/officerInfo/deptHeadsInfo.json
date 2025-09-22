@@ -4,73 +4,73 @@
       "Name": "Senoy, Kyle",
       "Position": "Networking Head",
       "Description": "\"Each choice changes everything\" (Wraith)",
-      "Image": "../assets/img/officers/Kyle.png"
+      "Image": "../assets/img/officers/Kyle.webp"
     },
     {
       "Name": "Lo Priego, Carlos Don",
       "Position": "Networking Co-Head",
       "Description": "To gain something, you must give something in return.",
-      "Image": "../assets/img/officers/Carlos.png"
+      "Image": "../assets/img/officers/Carlos.webp"
     },
     {
       "Name": "Natividad, Deniel Dave",
       "Position": "Cloud Computing Head",
       "Description": "Don’t you dare go hollow",
-      "Image": "../assets/img/officers/Deniel.png"
+      "Image": "../assets/img/officers/Deniel.webp"
     },
     {
       "Name": "Morgia, Maron",
       "Position": "Cloud Computing Co-Head",
       "Description": "If you don't give it your all then how much do you really want it",
-      "Image": "../assets/img/officers/Maron.png"
+      "Image": "../assets/img/officers/Maron.webp"
     },
     {
       "Name": "Albinda, Alex Neal",
       "Position": "Data Analytics Head",
       "Description": "Your mind is a world. Each of us is a place.",
-      "Image": "../assets/img/officers/Alex.png"
+      "Image": "../assets/img/officers/Alex.webp"
     },
     {
       "Name": "Bihag, Raphael",
       "Position": "Data Analytics Co-Head",
       "Description": "Do your best to trust all the rays of light",
-      "Image": "../assets/img/officers/Raphael.png"
+      "Image": "../assets/img/officers/Raphael.webp"
     },
     {
       "Name": "Peña, Mark Jaily",
       "Position": "Machine Learning Head",
       "Description": "A small step is still progress",
-      "Image": "../assets/img/officers/Mark.png"
+      "Image": "../assets/img/officers/Mark.webp"
     },
     {
       "Name": "Lambayao, Liarrah Daniya",
       "Position": "Machine Learning Co-Head",
       "Description": "Showing up matters.",
-      "Image": "../assets/img/officers/Liarrah.png"
+      "Image": "../assets/img/officers/Liarrah.webp"
     },
     {
       "Name": "Jomuad, Precious Mae",
       "Position": "Security Head",
       "Description": "Your fear of looking stupid is holding you back.",
-      "Image": "../assets/img/officers/Precious.png"
+      "Image": "../assets/img/officers/Precious.webp"
     },
     {
       "Name": "Taclindo, Borgy Lance",
       "Position": "Security Co-Head",
       "Description": "You are bound by nothing",
-      "Image": "../assets/img/officers/Borgy.png"
+      "Image": "../assets/img/officers/Borgy.webp"
     },
     {
       "Name": "Veloso, Justin Dominic",
       "Position": "Software & Web Development Head",
       "Description": "If you don't take risks, you can't create a future.",
-      "Image": "../assets/img/officers/Justin.png"
+      "Image": "../assets/img/officers/Justin.webp"
     },
     {
       "Name": "Medina, Breindel",
       "Position": "Software & Web Development Co-Head",
       "Description": "You lose today chasing what you can’t control.",
-      "Image": "../assets/img/officers/Breindel.png"
+      "Image": "../assets/img/officers/Breindel.webp"
     }
   ]
 }
